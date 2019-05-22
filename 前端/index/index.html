@@ -10,6 +10,21 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script>
+        $(document).ready(function(){
+            var t=1;
+            $("#btn11").click(function(){
+                //$(this).hide();
+                //$("#tiezi").append("<p>hhhh</p>")
+                ++t;
+                var s="<div class=\"post4\"><a href=\"#\" ><p><span>帖子"+t+"内容</span></p></a></div>\n" +
+                    "                    <div class=\"post4_time\"><p><span>帖子"+t+"日期</span></p></div>";
+                $("#tiezi").append(s);
+                s="<div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div>";
+                $("#tiezi").append(s);
+            });
+        });
+    </script>
 </head>
 <body>
     <!--导航栏navbar-->
@@ -84,7 +99,7 @@
             </div>
 
             <!--热门帖子post-->
-            <div class="col-sm-8">
+            <div class="col-sm-8" id="tiezi">
                 <div class="picture"><a href="#" >图片轮播</a></div>
                 <div class="hotpost"><a href="#" >热门帖子</a></div>
                 <div ><img class= "u10" src="images_index/u10.jpg" alt="图标"></div>
@@ -94,20 +109,6 @@
 
                     <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
 
-                    <div class="post2"><a href="#" ><p><span>帖子2内容</span></p></a></div>
-                    <div class="post2_time"><p><span>帖子2日期</span></p></div>
-
-                    <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
-
-                    <div class="post3"><a href="#" ><p><span>帖子3内容</span></p></a></div>
-                    <div class="post3_time"><p><span>帖子3日期</span></p></div>
-
-                    <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
-
-                    <div class="post4"><a href="#" ><p><span>帖子4内容</span></p></a></div>
-                    <div class="post4_time"><p><span>帖子4日期</span></p></div>
-
-                    <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
                 </div>
             </div>
 
@@ -130,5 +131,7 @@
             </div>
         </div>
     </div>
+
+    <button id="btn11"> 测试 </button>
 </body>
 </html>
