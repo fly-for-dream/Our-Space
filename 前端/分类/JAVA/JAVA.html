@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>软件工程教育论坛</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../cssjs/bootstrap.min.css">
+    <script src="../../cssjs/jquery.min.js"></script>
+    <script src="../../cssjs/popper.min.js"></script>
+    <script src="../../cssjs/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="JAVA.css">
+    <script src="JAVA.js"></script>
+</head>
+<body>
+<!--导航栏navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../../index/index.html"><img class= "u0" src="../../index/images_index/u0.jpg" alt="图标"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index/index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">任务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">班级</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">下载</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> </a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control" type="text" >
+                <button class="btn btn-success" type="button"><img class= "u6" src="../../index/images_index/u6.png" alt="图标"></button>
+            </form>
+            <ul class="navbar-nav">
+                <li id="notlogin1">
+                    <a class="nav-link" href="#">立即登录</a>
+                </li>
+                <li class="registernow" id="notlogin2">
+                    <a class="nav-link" href="#">马上注册</a>
+                </li>
+                <li id="islogin" hidden="hidden">
+                    <a class="nav-link" href="#">头像连接图片</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--分割线-->
+<div ><img class= "u10" src="../../index/images_index/u10.jpg" alt="图标"></div>
+
+<!--主体三部份-->
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <!--分类classity-->
+        <div class="col-sm-2">
+            <div class="classity"><p><span>分类</span></p></div>
+            <div><a class="HTML" href="../_HTML/_HTML.html" ><img class="u13" src="../../index/images_index/u13.png" alt="图标">HTML</a></div>
+            <div><a class="C" href="../C/C.html" ><img class="u15" src="../../index/images_index/u15.png" alt="图标">C</a></div>
+            <div><a class="CSS" href="../CSS/CSS.html" ><img class="u16" src="../../index/images_index/u16.png" alt="图标">CSS</a></div>
+            <div><a class="JAVA" href="../JAVA/JAVA.html" ><img class="u21" src="../../index/images_index/u21.png" alt="图标">JAVA</a></div>
+            <div><a class="HTTP" href="../HTTP/HTTP.html" ><img class="u17" src="../../index/images_index/u17.png" alt="图标">HTTP</a></div>
+            <div><a class="JS" href="../JS/JS.html" ><img class="u18" src="../../index/images_index/u18.png" alt="图标">JS</a></div>
+            <div><a class="PY" href="../PY/PY.html" ><img class="u20" src="../../index/images_index/u20.png" alt="图标">PY</a></div>
+            <div><a class="PHP" href="../PHP/PHP.html" ><img class="u19" src="../../index/images_index/u19.png" alt="图标">PHP</a></div>
+            <div><a class="C#" href="../CSharp/CSharp.html" ><img class="u14" src="../../index/images_index/u14.png" alt="图标">C#</a></div>
+            <div><a class="C++" href="../C++/C++.html" ><img class="u22" src="../../index/images_index/u22.png" alt="图标">C++</a></div>
+        </div>
+
+        <!--中间-->
+        <div class="col-sm-8">
+            <!--简介-->
+            <div class="intro">
+                <div class="title_width">
+                    <div class="intro_title">
+                        <p><span>JAVA</span></p>
+                    </div>
+                </div>
+                <div class="intro_details">
+                    <p><span>JAVA 是 ...</span></p>
+                </div>
+            </div>
+
+            <!--内容-->
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active float_left"><a href="#newpost" data-toggle="tab">最新发帖</a></li>
+                <li class="float_left"><a href="#question_answer" data-toggle="tab">技术问答</a></li>
+                <li class="float_left"><a href="#essence" data-toggle="tab">精华</a></li>
+                <li class="intro_post"><div><a href="../../post_detail/post_detail.html">发帖</a></div></li>
+            </ul>
+            <div id="myTabContent"  class="tab-content">
+                <!--最新发帖-->
+                <div class="tab-pane fade in active" id="newpost">
+
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>最新发帖帖子1内容</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>帖子1回复数量</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>帖子1日期</span></p></div>
+                        <div class="post1_browse_num"><p><span>帖子1浏览次数</span></p></div>
+                    </div>
+
+                    <div ><img class= "u678" src="../../index/images_index/u678.png" alt="图标"></div>
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>帖子2内容</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>帖子2回复数量</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>帖子2日期</span></p></div>
+                        <div class="post1_browse_num"><p><span>帖子2浏览次数</span></p></div>
+                    </div>
+
+                    <div ><img class= "u678" src="../../index/images_index/u678.png" alt="图标"></div>
+                </div>
+
+                <!--技术问答-->
+                <div class="tab-pane fade" id="question_answer">
+
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>技术问答帖子1内容</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>帖子1回复数量</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>帖子1日期</span></p></div>
+                        <div class="post1_browse_num"><p><span>帖子1浏览次数</span></p></div>
+                    </div>
+                    <div ><img class= "u678" src="../../index/images_index/u678.png" alt="图标"></div>
+
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>帖子2内容</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>帖子2回复数量</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>帖子2日期</span></p></div>
+                        <div class="post1_browse_num"><p><span>帖子2浏览次数</span></p></div>
+                    </div>
+
+                    <div ><img class= "u678" src="../../index/images_index/u678.png" alt="图标"></div>
+                </div>
+
+                <!--精华-->
+                <div class="tab-pane fade" id="essence">
+
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>精华帖子1内容</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>帖子1回复数量</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>帖子1日期</span></p></div>
+                        <div class="post1_browse_num"><p><span>帖子1浏览次数</span></p></div>
+                    </div>
+
+                    <div ><img class= "u678" src="../../index/images_index/u678.png" alt="图标"></div>
+
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>帖子2内容</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>帖子2回复数量</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>帖子2日期</span></p></div>
+                        <div class="post1_browse_num"><p><span>帖子2浏览次数</span></p></div>
+                    </div>
+
+                    <div ><img class= "u678" src="../../index/images_index/u678.png" alt="图标"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--每日学习榜-->
+        <div class="col-sm-2">
+            <!--class="everyday"：区别分类用-->
+            <div class="everyday">
+                <div class="study"><p><span>每日学习榜</span></p></div>
+                <div><div class="rankings"><img class="u39" src="../../index/images_index/u39.png" alt="图标"></div><div class="rank_num"><a href="#">1</a></div></div>
+                <div><div class="rankings"><img class="u40" src="../../index/images_index/u40.png" alt="图标"></div><div class="rank_num"><a href="#">2</a></div></div>
+                <div><div class="rankings"><img class="u41" src="../../index/images_index/u41.png" alt="图标"></div><div class="rank_num"><a href="#">3</a></div></div>
+                <div><div class="rankings"><img class="u42" src="../../index/images_index/u42.png" alt="图标"></div><div class="rank_num"><a href="#">4</a></div></div>
+                <div><div class="rankings"><img class="u43" src="../../index/images_index/u43.png" alt="图标"></div><div class="rank_num"><a href="#">5</a></div></div>
+                <div><div class="rankings"><img class="u44" src="../../index/images_index/u44.png" alt="图标"></div><div class="rank_num"><a href="#">6</a></div></div>
+                <div><div class="rankings"><img class="u45" src="../../index/images_index/u45.png" alt="图标"></div><div class="rank_num"><a href="#">7</a></div></div>
+                <div><div class="rankings"><img class="u46" src="../../index/images_index/u46.png" alt="图标"></div><div class="rank_num"><a href="#">8</a></div></div>
+                <div><div class="rankings"><img class="u47" src="../../index/images_index/u47.png" alt="图标"></div><div class="rank_num"><a href="#">9</a></div></div>
+                <div><div class="rankings"><img class="u48" src="../../index/images_index/u48.png" alt="图标"></div><div class="rank_num"><a href="#">10</a></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
