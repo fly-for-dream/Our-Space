@@ -9,6 +9,7 @@
     <script src="../cssjs/popper.min.js"></script>
     <script src="../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="../constAPI.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
@@ -82,50 +83,52 @@
 
             <!--热门帖子post-->
             <div class="col-sm-8">
-                <div class="picture"><a href="#" >图片轮播</a></div>
+                <div>
+                    <img id="imagelist" src="../image/page1.jpg" width="750px" height="285px">
+                </div>
                 <div class="hotpost"><a href="#" >热门帖子</a></div>
                 <div ><img class= "u10" src="images_index/u10.jpg" alt="图标"></div>
-                <div class="post">
+                <div id="hotpostsbody" class="post">
 
                     <div class="post_width">
-                        <div class="post1"><a href="#" ><p><span>帖子1内容</span></p></a></div>
-                        <div class="post1_reply_num"><p><span>帖子1分类</span></p></div>
+                        <div class="post1"><a href="#" ><p><span>关于HTML的分类问题</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>HTML</span></p></div>
                     </div>
                     <div class="post_width">
-                        <div class="post1_time"><p><span>帖子1日期</span></p></div>
-                        <div class="post1_browse_num"><p><span>帖子1浏览次数</span></p></div>
+                        <div class="post1_time"><p><span>2018/8/2</span></p></div>
+                        <div class="post1_browse_num"><p><span>2000</span></p></div>
                     </div>
                     <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
 
                     <div class="post_width">
-                        <div class="post1"><a href="#" ><p><span>帖子2内容</span></p></a></div>
-                        <div class="post1_reply_num"><p><span>帖子2分类</span></p></div>
+                        <div class="post1"><a href="#" ><p><span>JAVA AOP开发的思考</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>JAVA</span></p></div>
                     </div>
                     <div class="post_width">
-                        <div class="post1_time"><p><span>帖子2日期</span></p></div>
-                        <div class="post1_browse_num"><p><span>帖子2浏览次数</span></p></div>
-                    </div>
-
-                    <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
-
-                    <div class="post_width">
-                        <div class="post1"><a href="#" ><p><span>帖子3内容</span></p></a></div>
-                        <div class="post1_reply_num"><p><span>帖子3分类</span></p></div>
-                    </div>
-                    <div class="post_width">
-                        <div class="post1_time"><p><span>帖子3日期</span></p></div>
-                        <div class="post1_browse_num"><p><span>帖子3浏览次数</span></p></div>
+                        <div class="post1_time"><p><span>2018/8/22</span></p></div>
+                        <div class="post1_browse_num"><p><span>500</span></p></div>
                     </div>
 
                     <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
 
                     <div class="post_width">
-                        <div class="post1"><a href="#" ><p><span>帖子4内容</span></p></a></div>
-                        <div class="post1_reply_num"><p><span>帖子4分类</span></p></div>
+                        <div class="post1"><a href="#" ><p><span>机器学习</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>PY</span></p></div>
                     </div>
                     <div class="post_width">
-                        <div class="post1_time"><p><span>帖子4日期</span></p></div>
-                        <div class="post1_browse_num"><p><span>帖子4浏览次数</span></p></div>
+                        <div class="post1_time"><p><span>2018/5/2</span></p></div>
+                        <div class="post1_browse_num"><p><span>100</span></p></div>
+                    </div>
+
+                    <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
+
+                    <div class="post_width">
+                        <div class="post1"><a href="#" ><p><span>我是一个测试数据</span></p></a></div>
+                        <div class="post1_reply_num"><p><span>HTTP</span></p></div>
+                    </div>
+                    <div class="post_width">
+                        <div class="post1_time"><p><span>2018/5/2</span></p></div>
+                        <div class="post1_browse_num"><p><span>20</span></p></div>
                     </div>
 
                     <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
@@ -137,16 +140,16 @@
                 <!--class="everyday"：区别分类用-->
                 <div class="everyday">
                     <div class="study"><p><span>每日学习榜</span></p></div>
-                    <div><div class="rankings"><img class="u39" src="images_index/u39.png" alt="图标"></div><div class="rank_num"><a href="#">1</a></div></div>
-                    <div><div class="rankings"><img class="u40" src="images_index/u40.png" alt="图标"></div><div class="rank_num"><a href="#">2</a></div></div>
-                    <div><div class="rankings"><img class="u41" src="images_index/u41.png" alt="图标"></div><div class="rank_num"><a href="#">3</a></div></div>
-                    <div><div class="rankings"><img class="u42" src="images_index/u42.png" alt="图标"></div><div class="rank_num"><a href="#">4</a></div></div>
-                    <div><div class="rankings"><img class="u43" src="images_index/u43.png" alt="图标"></div><div class="rank_num"><a href="#">5</a></div></div>
-                    <div><div class="rankings"><img class="u44" src="images_index/u44.png" alt="图标"></div><div class="rank_num"><a href="#">6</a></div></div>
-                    <div><div class="rankings"><img class="u45" src="images_index/u45.png" alt="图标"></div><div class="rank_num"><a href="#">7</a></div></div>
-                    <div><div class="rankings"><img class="u46" src="images_index/u46.png" alt="图标"></div><div class="rank_num"><a href="#">8</a></div></div>
-                    <div><div class="rankings"><img class="u47" src="images_index/u47.png" alt="图标"></div><div class="rank_num"><a href="#">9</a></div></div>
-                    <div><div class="rankings"><img class="u48" src="images_index/u48.png" alt="图标"></div><div class="rank_num"><a href="#">10</a></div></div>
+                    <div><div class="rankings"><img class="u39" src="images_index/u39.png" alt="图标"></div><div class="rank_num"><a href="#">叫猪学猪叫</a></div></div>
+                    <div><div class="rankings"><img class="u40" src="images_index/u40.png" alt="图标"></div><div class="rank_num"><a href="#">给力熬</a></div></div>
+                    <div><div class="rankings"><img class="u41" src="images_index/u41.png" alt="图标"></div><div class="rank_num"><a href="#">我怀疑</a></div></div>
+                    <div><div class="rankings"><img class="u42" src="images_index/u42.png" alt="图标"></div><div class="rank_num"><a href="#">你在</a></div></div>
+                    <div><div class="rankings"><img class="u43" src="images_index/u43.png" alt="图标"></div><div class="rank_num"><a href="#">开车</a></div></div>
+                    <div><div class="rankings"><img class="u44" src="images_index/u44.png" alt="图标"></div><div class="rank_num"><a href="#">但是我</a></div></div>
+                    <div><div class="rankings"><img class="u45" src="images_index/u45.png" alt="图标"></div><div class="rank_num"><a href="#">没有证据</a></div></div>
+                    <div><div class="rankings"><img class="u46" src="images_index/u46.png" alt="图标"></div><div class="rank_num"><a href="#">网络不是</a></div></div>
+                    <div><div class="rankings"><img class="u47" src="images_index/u47.png" alt="图标"></div><div class="rank_num"><a href="#">非法之地</a></div></div>
+                    <div><div class="rankings"><img class="u48" src="images_index/u48.png" alt="图标"></div><div class="rank_num"><a href="#">我不说话</a></div></div>
                 </div>
             </div>
         </div>
