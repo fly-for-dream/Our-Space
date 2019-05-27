@@ -1,0 +1,157 @@
+
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/************主体************/
+/****************************/
+
+.max_div{
+    width: 90%;
+    margin: auto;
+}
+
+.left_div{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 25%;
+    height: 30vh;
+}
+
+.head_portrait{
+    width: 100%;
+    height: 100%;
+    background-color: #99CC99;
+}
+
+.right_div{
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 72%;
+}
+
+.welcome{
+    background-color: rgba(228,228,228,1);
+    height: 18vh;
+    width: 100%;
+    position: relative;
+}
+
+._name{
+    margin: 5px;
+    padding: 5px;
+    font-size: 28px;
+    color: black;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+._welcome{
+    width: 65%;
+    font-size: 14px;
+    padding: 30px;
+    float:left;
+}
+
+._bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+._bottom > ul > li{
+    width: 13%;
+    float: right;
+    background-color: rgba(215,215,215,1);
+    margin-left: 3px;
+    text-align: center;
+}
+
+.active{
+    margin-left: 5px;
+}
+
+._bottom > ul > li > a{
+    font-size: 14px;
+    color: black;
+}
+
