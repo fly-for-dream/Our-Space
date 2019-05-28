@@ -12,9 +12,27 @@
     <script src="../constAPI.js"></script>
     <script src="index.js"></script>
     <script>
-        function addHotElement() {
 
+        function get_HotElement(name, type, time, num) {
+            var s="<div class=\"post_width\"> \
+            <div class=\"post1\"><a href=\"#\" ><p><span>"+name+"</span></p></a></div> \
+            <div class=\"post1_reply_num\"><p><span>"+type+"</span></p></div> \
+            </div> \
+            <div class=\"post_width\"> \
+                <div class=\"post1_time\"><p><span>"+time+"</span></p></div> \
+            <div class=\"post1_browse_num\"><p><span>"+num+"</span></p></div> \
+            </div> \
+            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div>";
+            return s;
         }
+
+        function addHotElement() {
+            $("#hotpostsbody").append(get_HotElement(1,2,3,4));
+        }
+
+        $(document).ready(function () {
+            addHotElement();
+        })
     </script>
 </head>
 <body>
