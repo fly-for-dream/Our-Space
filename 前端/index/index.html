@@ -17,25 +17,43 @@
 
     <script>
 
-        function get_HotElement(name, type, time, num) {
+        function get_HotElement(e) {
             var s="<div class=\"post_width\"> \
-            <div class=\"post1\"><a href=\"#\" ><p><span>"+name+"</span></p></a></div> \
-            <div class=\"post1_reply_num\"><p><span>"+type+"</span></p></div> \
+            <div class=\"post1\"><a href=\"#\" ><p><span>"+e.name+"</span></p></a></div> \
+            <div class=\"post1_reply_num\"><p><span>"+e.type+"</span></p></div> \
             </div> \
             <div class=\"post_width\"> \
-                <div class=\"post1_time\"><p><span>"+time+"</span></p></div> \
-            <div class=\"post1_browse_num\"><p><span>"+num+"</span></p></div> \
+                <div class=\"post1_time\"><p><span>"+e.time+"</span></p></div> \
+            <div class=\"post1_browse_num\"><p><span>"+e.num+"</span></p></div> \
             </div> \
             <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div>";
             return s;
         }
 
-        function addHotElement() {
-            $("#hotpostsbody").append(get_HotElement(1,2,3,4));
+        var e={
+            "name":"关于HTML的分类问题",
+            "type":"HTML",
+            "time":"2018/8/2",
+            "num":"2000"
+        }
+
+        var data=[e,e,e];
+
+        function addHotElement(data) {
+            for (var i=0; i<data.length; ++i)
+                $("#hotpostsbody").append(get_HotElement(data[i]));
+        }
+
+        var nam=["0","1","2","3","4","5","6","7","8","9"];
+
+        function showRankName(name) {
+            for (var i=0; i<10; ++i)
+                $(".rank_num").children("a").eq(i).text(name[i]);
         }
 
         $(document).ready(function () {
-            addHotElement();
+            addHotElement(data);
+            showRankName(nam);
         })
     </script>
 
