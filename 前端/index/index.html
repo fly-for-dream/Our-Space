@@ -18,7 +18,7 @@
     <script>
 
         function get_HotElement(e) {
-            var s="<div class=\"post_width\"> \
+            /*var s="<div class=\"post_width\"> \
             <div class=\"post1\"><a href=\"#\" ><p><span>"+e.name+"</span></p></a></div> \
             <div class=\"post1_reply_num\"><p><span>"+e.type+"</span></p></div> \
             </div> \
@@ -26,7 +26,18 @@
                 <div class=\"post1_time\"><p><span>"+e.time+"</span></p></div> \
             <div class=\"post1_browse_num\"><p><span>"+e.num+"</span></p></div> \
             </div> \
-            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div>";
+            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div>";*/
+
+            var s="<div class = \"hote\" style='display: none'><div class=\"post_width\"> \
+            <div class=\"post1\"><a href=\"#\" ><p><span style='font-size: large'><b>"+e.name+"</b>></span></p></a></div> \
+            <div class=\"post1_reply_num\"><p><span style='font-size: large'><b>"+e.type+"</b></span></p></div> \
+            </div> \
+            <div class=\"post_width\"> \
+                <div class=\"post1_time\"><p><span>"+e.time+"</span></p></div> \
+            <div class=\"post1_browse_num\"><p><span>"+e.num+"</span></p></div> \
+            </div> \
+            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div> </div>";
+
             return s;
         }
 
@@ -35,9 +46,10 @@
             "type":"HTML",
             "time":"2018/8/2",
             "num":"2000"
-        }
+        };
 
-        var data=[e,e,e];
+        var data=[];
+        for (var i=0; i<10; i++) data.push(e)
 
         function addHotElement(data) {
             for (var i=0; i<data.length; ++i)
@@ -51,9 +63,16 @@
                 $(".rank_num").children("a").eq(i).text(name[i]);
         }
 
+        function showHotElement(){
+            var t=$(".hote");
+            for (var i=0; i<t.length; ++i)
+                t.eq(i).delay(i*300).fadeIn(1500);
+        }
+
         $(document).ready(function () {
             addHotElement(data);
             showRankName(nam);
+            showHotElement();
         })
     </script>
 
@@ -142,6 +161,8 @@
                 <div ><img class= "u10" src="images_index/u10.jpg" alt="图标"></div>
                 <div id="hotpostsbody" class="post">
 
+
+                    <!--
                     <div class="post_width">
                         <div class="post1"><a href="#" ><p><span>关于HTML的分类问题</span></p></a></div>
                         <div class="post1_reply_num"><p><span>HTML</span></p></div>
@@ -181,6 +202,9 @@
                         <div class="post1_browse_num"><p><span>20</span></p></div>
                     </div>
                     <div ><img class= "u75" src="images_index/u75.png" alt="图标"></div>
+
+                    -->
+
 
                 </div>
             </div>
