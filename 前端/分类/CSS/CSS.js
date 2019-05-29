@@ -3,17 +3,17 @@ document.write("<script type='text/javascript' src='../../dataExamples.js'></scr
 
 function addNewPostElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#newpost").append(get_Element_2(data[i]));
+        $("#newpost").append(get_HotElement_B(data[i]));
 }
 
 function addQuestionAnswerElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#question_answer").append(get_Element_2(data[i]));
+        $("#question_answer").append(get_HotElement_B(data[i]));
 }
 
 function addEssenceElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#essence").append(get_Element_2(data[i]));
+        $("#essence").append(get_HotElement_B(data[i]));
 }
 
 function showRankName(data) {
