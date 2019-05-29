@@ -24,17 +24,23 @@ function showRankName(data) {
 function showNewPostElement(){
     const t = $("#newpost").children(".hote");
     for (let i=0; i<t.length; ++i)
+        t.eq(i).css("display","none");
+    for (let i=0; i<t.length; ++i)
         t.eq(i).delay(i*300).fadeIn(1500);
 }
 
 function showQuestionAnswerElement(){
     const t = $("#question_answer").children(".hote");
     for (let i=0; i<t.length; ++i)
+        t.eq(i).css("display","none");
+    for (let i=0; i<t.length; ++i)
         t.eq(i).delay(i*300).fadeIn(1500);
 }
 
 function showEssenceElement(){
     const t = $("#essence").children(".hote");
+    for (let i=0; i<t.length; ++i)
+        t.eq(i).css("display","none");
     for (let i=0; i<t.length; ++i)
         t.eq(i).delay(i*300).fadeIn(1500);
 }
@@ -49,6 +55,13 @@ $(document).ready(function () {
     showNewPostElement();
     showQuestionAnswerElement();
     showEssenceElement();
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        const t=e.target.getAttribute("href");
+        if (t === "#newpost") showNewPostElement();
+        if (t === "#question_answer") showQuestionAnswerElement();
+        if (t === "#essence") showEssenceElement();
+    })
 });
 
 $(function () {
