@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd68c72-f697-4e0d-868c-7128d440273b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/post/C++_post/C++_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/post/C++_post/C++_post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/C++/C++.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/C++/C++.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/C/C.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/C/C.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/CSS/CSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/CSS/CSS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/CSharp/CSharp.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/CSharp/CSharp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/HTTP/HTTP.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/HTTP/HTTP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/JAVA/JAVA.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/JAVA/JAVA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/JS/JS.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/JS/JS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/PHP/PHP.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/PHP/PHP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/分类/PY/PY.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/PY/PY.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataExamples.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usefulFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/usefulFunction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/分类/_HTML/_HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/_HTML/_HTML.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/_HTML/_HTML.js" beforeDir="false" afterPath="$PROJECT_DIR$/分类/_HTML/_HTML.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,91 +21,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataExamples.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/constAPI.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/C/C.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/C++/C++.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/CSharp/CSharp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/CSS/CSS.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/HTTP/HTTP.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/JAVA/JAVA.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/JS/JS.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分类/PHP/PHP.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="243">
+              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/分类/PY/PY.html">
+        <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="428">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usefulFunction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,13 +95,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index/index.js" />
-        <option value="$PROJECT_DIR$/usefulFunction.js" />
         <option value="$PROJECT_DIR$/index/index.html" />
         <option value="$PROJECT_DIR$/personal_information/information.html" />
         <option value="$PROJECT_DIR$/post_detail/post_detail.html" />
         <option value="$PROJECT_DIR$/任务/task.html" />
-        <option value="$PROJECT_DIR$/分类/_HTML/_HTML.html" />
         <option value="$PROJECT_DIR$/post/C++_post/C++_post.html" />
         <option value="$PROJECT_DIR$/分类/C/C.html" />
         <option value="$PROJECT_DIR$/分类/C++/C++.html" />
@@ -147,6 +109,11 @@
         <option value="$PROJECT_DIR$/分类/JS/JS.html" />
         <option value="$PROJECT_DIR$/分类/PHP/PHP.html" />
         <option value="$PROJECT_DIR$/分类/PY/PY.html" />
+        <option value="$PROJECT_DIR$/dataExamples.js" />
+        <option value="$PROJECT_DIR$/usefulFunction.js" />
+        <option value="$PROJECT_DIR$/index/index.js" />
+        <option value="$PROJECT_DIR$/分类/_HTML/_HTML.html" />
+        <option value="$PROJECT_DIR$/分类/_HTML/_HTML.js" />
       </list>
     </option>
   </component>
@@ -172,13 +139,18 @@
             <path>
               <item name="前端" type="b2602c69:ProjectViewProjectNode" />
               <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="前端" type="b2602c69:ProjectViewProjectNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
               <item name="分类" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="前端" type="b2602c69:ProjectViewProjectNode" />
               <item name="前端" type="462c0819:PsiDirectoryNode" />
               <item name="分类" type="462c0819:PsiDirectoryNode" />
-              <item name="PY" type="462c0819:PsiDirectoryNode" />
+              <item name="_HTML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -251,12 +223,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559054772127</updated>
       <workItem from="1559054775367" duration="12167000" />
-      <workItem from="1559106672335" duration="6888000" />
+      <workItem from="1559106672335" duration="10013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19055000" />
+    <option name="totallyTimeSpent" value="22180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -305,27 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usefulFunction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/personal_information/information.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -340,16 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/post/C++_post/C++_post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -361,13 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -429,8 +363,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/分类/PY/PY.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="108">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usefulFunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataExamples.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
         </state>
       </provider>
     </entry>

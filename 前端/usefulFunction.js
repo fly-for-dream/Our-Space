@@ -32,3 +32,10 @@ function get_HotElement(e) {
             </div> \
             <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div> </div>";
 }
+
+function include(s, k) {
+    let t = s;
+    for (let i=0; i<k; ++i) t+='../';
+    document.write("<script type='text/javascript' src="+ t +"></script>");
+}
+
