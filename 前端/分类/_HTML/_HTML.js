@@ -49,6 +49,7 @@ $(document).ready(function () {
     showNewPostElement();
     showQuestionAnswerElement();
     showEssenceElement();
+
 });
 
 $(function () {
