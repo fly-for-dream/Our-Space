@@ -125,7 +125,41 @@ a:active{
     padding: 0 5px;
 }
 
+.col-sm-8 > ul > li{
+    width: 15%;
+    margin: 10px 2px;
+}
 
+.col-sm-8 > ul > li > a{
+    color: #999999;
+    text-align: center;
+}
+
+.col-sm-8 > ul > li > a:hover{
+    background-color: #99CC99;
+}
+
+.issue_task > div,.my_task > div{
+    background-color: #99CC99;
+    text-align: center;
+}
+
+.issue_task > div > a,.my_task > div > a{
+    color: #999999;
+}
+
+.first_task,.first_task_name{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.first_task{
+    width: 15%;
+}
+
+.first_task_name{
+    width: 70%;
+}
 
 /****************************/
 /***********每日回答榜*******/
