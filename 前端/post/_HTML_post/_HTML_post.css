@@ -141,27 +141,21 @@ a:active{
 
 
 /****************************/
-/***********返回*************/
+/***********发表*************/
 /****************************/
 
-.post_lable1{
+.submit_button{
     width: 90%;
-    height: 35px;
     margin: 10px auto;
 }
 
-.left_lable1{
-    width: 100px;
-    height: 35px;
-    float: left;
+.btn{
     background-color: #99CC99;
 }
 
-.left_lable1> p{
-    padding-top: 3px;
-    text-align: center;
-    font-size: 16px;
+.btn-outline-success{
     color: green;
+    border-color: #99CC99;
 }
 
 
