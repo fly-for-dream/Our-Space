@@ -1,0 +1,114 @@
+
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/************主体************/
+/****************************/
+
+.main_part{
+    width: 96%;
+    margin: auto;
+}
+
+.icon{
+    width: 12%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.icon > img{
+    width: 32px;
+    height: 32px;
+}
+
+.courseware{
+    width: 88%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.courseware > div{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
