@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="utf-8">
 
 
 <head>
@@ -17,60 +17,73 @@
 
     <script>
 
-        function get_HotElement(e) {
-            /*var s="<div class=\"post_width\"> \
-            <div class=\"post1\"><a href=\"#\" ><p><span>"+e.name+"</span></p></a></div> \
-            <div class=\"post1_reply_num\"><p><span>"+e.type+"</span></p></div> \
-            </div> \
-            <div class=\"post_width\"> \
-                <div class=\"post1_time\"><p><span>"+e.time+"</span></p></div> \
-            <div class=\"post1_browse_num\"><p><span>"+e.num+"</span></p></div> \
-            </div> \
-            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div>";*/
+        const NormalStatusCode = 200;
 
-            var s="<div class = \"hote\" style='display: none'><div class=\"post_width\"> \
-            <div class=\"post1\"><a href=\"#\" ><p><span style='font-size: large'><b>"+e.name+"</b>></span></p></a></div> \
-            <div class=\"post1_reply_num\"><p><span style='font-size: large'><b>"+e.type+"</b></span></p></div> \
-            </div> \
-            <div class=\"post_width\"> \
-                <div class=\"post1_time\"><p><span>"+e.time+"</span></p></div> \
-            <div class=\"post1_browse_num\"><p><span>"+e.num+"</span></p></div> \
-            </div> \
-            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div> </div>";
-
-            return s;
+        /**
+         * @return {boolean}
+         */
+        function CheckCode(res) {
+            if (res.code === NormalStatusCode) {
+                console.log("成功");
+                return true;
+            } else {
+                console.log(res.message);
+                return false;
+            }
         }
 
-        var e={
-            "name":"关于HTML的分类问题",
-            "type":"HTML",
-            "time":"2018/8/2",
-            "num":"2000"
+        function GloGet(url, data, f) {
+            globalGet(url,data,function (res) {
+                if (CheckCode(res)) {
+                    f(res.data);
+                }
+            });
+        }
+
+        function get_HotElement(e) {
+
+            return "<div class = \"hote\" style='display: none'><div class=\"post_width\"> \
+            <div class=\"post1\"><a href=\"#\" ><p><span style='font-size: large'><b>" + e.name + "</b></span></p></a></div> \
+            <div class=\"post1_reply_num\"><p><span style='font-size: large'><b>" + e.type + "</b></span></p></div> \
+            </div> \
+            <div class=\"post_width\"> \
+                <div class=\"post1_time\"><p><span>" + e.time + "</span></p></div> \
+            <div class=\"post1_browse_num\"><p><span>" + e.num + "</span></p></div> \
+            </div> \
+            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div> </div>";
+        }
+
+        const e = {
+            "name": "关于HTML的分类问题",
+            "type": "HTML",
+            "time": "2018/8/2",
+            "num": "2000"
         };
 
-        var data=[];
-        for (var i=0; i<10; i++) data.push(e)
+        const data = [];
+        for (let i=0; i<10; i++) data.push(e);
 
         function addHotElement(data) {
-            for (var i=0; i<data.length; ++i)
+            for (let i=0; i<data.length; ++i)
                 $("#hotpostsbody").append(get_HotElement(data[i]));
         }
 
-        var nam=["0","1","2","3","4","5","6","7","8","9"];
+        const nam = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-        function showRankName(name) {
-            for (var i=0; i<10; ++i)
-                $(".rank_num").children("a").eq(i).text(name[i]);
+        function showRankName(data) {
+            for (let i=0; i<10; ++i)
+                $(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i]);
         }
 
         function showHotElement(){
-            var t=$(".hote");
-            for (var i=0; i<t.length; ++i)
+            const t = $(".hote");
+            for (let i=0; i<t.length; ++i)
                 t.eq(i).delay(i*300).fadeIn(1500);
         }
 
         $(document).ready(function () {
             addHotElement(data);
+            //GloGet("http://{{host}}/index/getRank",null,showRankName);
             showRankName(nam);
             showHotElement();
         })
@@ -155,7 +168,7 @@
             <!--热门帖子post-->
             <div class="col-sm-8">
                 <div>
-                    <img id="imagelist" src="../image/page1.jpg" width="750px" height="285px">
+                    <img id="imagelist" src="../image/page1.jpg" width="100%" height="285px">
                 </div>
                 <div class="hotpost"><a href="#" >热门帖子</a></div>
                 <div ><img class= "u10" src="images_index/u10.jpg" alt="图标"></div>
