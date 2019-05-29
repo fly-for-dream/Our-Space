@@ -152,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.task.html">
     <configuration name="C++_post.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/前端/post/C++_post/C++_post.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -170,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.task.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.post_detail.html" />
         <item itemvalue="JavaScript Debug.C++_post.html" />
         <item itemvalue="JavaScript Debug.C.html" />
-        <item itemvalue="JavaScript Debug.task.html" />
       </list>
     </recent_temporary>
   </component>
