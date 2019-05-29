@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd68c72-f697-4e0d-868c-7128d440273b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/usefulFunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal_information/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/personal_information/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post_detail/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/post_detail/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/任务/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/任务/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/C++_post/C++_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/post/C++_post/C++_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/C++/C++.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/C++/C++.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/C/C.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/C/C.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/CSS/CSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/CSS/CSS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/CSharp/CSharp.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/CSharp/CSharp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/HTTP/HTTP.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/HTTP/HTTP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/JAVA/JAVA.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/JAVA/JAVA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/JS/JS.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/JS/JS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/PHP/PHP.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/PHP/PHP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/PY/PY.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/PY/PY.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分类/_HTML/_HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/分类/_HTML/_HTML.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,16 +26,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/post_detail/post_detail.html">
+        <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+            <state relative-caret-position="54">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/C/C.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/C++/C++.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/CSharp/CSharp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/CSS/CSS.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/HTTP/HTTP.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/JAVA/JAVA.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/JS/JS.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分类/PHP/PHP.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/任务/task.html">
+        <entry file="file://$PROJECT_DIR$/分类/PY/PY.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
               <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
@@ -60,6 +136,17 @@
         <option value="$PROJECT_DIR$/personal_information/information.html" />
         <option value="$PROJECT_DIR$/post_detail/post_detail.html" />
         <option value="$PROJECT_DIR$/任务/task.html" />
+        <option value="$PROJECT_DIR$/分类/_HTML/_HTML.html" />
+        <option value="$PROJECT_DIR$/post/C++_post/C++_post.html" />
+        <option value="$PROJECT_DIR$/分类/C/C.html" />
+        <option value="$PROJECT_DIR$/分类/C++/C++.html" />
+        <option value="$PROJECT_DIR$/分类/CSharp/CSharp.html" />
+        <option value="$PROJECT_DIR$/分类/CSS/CSS.html" />
+        <option value="$PROJECT_DIR$/分类/HTTP/HTTP.html" />
+        <option value="$PROJECT_DIR$/分类/JAVA/JAVA.html" />
+        <option value="$PROJECT_DIR$/分类/JS/JS.html" />
+        <option value="$PROJECT_DIR$/分类/PHP/PHP.html" />
+        <option value="$PROJECT_DIR$/分类/PY/PY.html" />
       </list>
     </option>
   </component>
@@ -85,7 +172,13 @@
             <path>
               <item name="前端" type="b2602c69:ProjectViewProjectNode" />
               <item name="前端" type="462c0819:PsiDirectoryNode" />
-              <item name="任务" type="462c0819:PsiDirectoryNode" />
+              <item name="分类" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="前端" type="b2602c69:ProjectViewProjectNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="分类" type="462c0819:PsiDirectoryNode" />
+              <item name="PY" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -121,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.post_detail.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="C++_post.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/前端/post/C++_post/C++_post.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -139,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.post_detail.html" />
         <item itemvalue="JavaScript Debug.C++_post.html" />
         <item itemvalue="JavaScript Debug.C.html" />
         <item itemvalue="JavaScript Debug.task.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -158,12 +251,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559054772127</updated>
       <workItem from="1559054775367" duration="12167000" />
-      <workItem from="1559106672335" duration="6554000" />
+      <workItem from="1559106672335" duration="6888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18721000" />
+    <option name="totallyTimeSpent" value="19055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -202,20 +295,6 @@
     <entry file="file://$PROJECT_DIR$/分类/C/C.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/分类/C/C.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="77" column="14" lean-forward="true" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post/C++_post/C++_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/post/C++_post/C++_post.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -240,16 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usefulFunction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -264,14 +333,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post_detail/post_detail.html">
+    <entry file="file://$PROJECT_DIR$/任务/task.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+        <state relative-caret-position="378">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/任务/task.html">
+    <entry file="file://$PROJECT_DIR$/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post/C++_post/C++_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post_detail/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/_HTML/_HTML.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/C/C.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/C++/C++.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/CSharp/CSharp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/CSS/CSS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/HTTP/HTTP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/JAVA/JAVA.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/JS/JS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/PHP/PHP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分类/PY/PY.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
