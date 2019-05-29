@@ -12,82 +12,8 @@
     <script src="../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <script src="../constAPI.js"></script>
+    <script src="../usefulFunction.js"></script>
     <script src="index.js"></script>
-
-
-    <script>
-
-        const NormalStatusCode = 200;
-
-        /**
-         * @return {boolean}
-         */
-        function CheckCode(res) {
-            if (res.code === NormalStatusCode) {
-                console.log("成功");
-                return true;
-            } else {
-                console.log(res.message);
-                return false;
-            }
-        }
-
-        function GloGet(url, data, f) {
-            globalGet(url,data,function (res) {
-                if (CheckCode(res)) {
-                    f(res.data);
-                }
-            });
-        }
-
-        function get_HotElement(e) {
-
-            return "<div class = \"hote\" style='display: none'><div class=\"post_width\"> \
-            <div class=\"post1\"><a href=\"#\" ><p><span style='font-size: large'><b>" + e.name + "</b></span></p></a></div> \
-            <div class=\"post1_reply_num\"><p><span style='font-size: large'><b>" + e.type + "</b></span></p></div> \
-            </div> \
-            <div class=\"post_width\"> \
-                <div class=\"post1_time\"><p><span>" + e.time + "</span></p></div> \
-            <div class=\"post1_browse_num\"><p><span>" + e.num + "</span></p></div> \
-            </div> \
-            <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div> </div>";
-        }
-
-        const e = {
-            "name": "关于HTML的分类问题",
-            "type": "HTML",
-            "time": "2018/8/2",
-            "num": "2000"
-        };
-
-        const data = [];
-        for (let i=0; i<10; i++) data.push(e);
-
-        function addHotElement(data) {
-            for (let i=0; i<data.length; ++i)
-                $("#hotpostsbody").append(get_HotElement(data[i]));
-        }
-
-        const nam = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-
-        function showRankName(data) {
-            for (let i=0; i<10; ++i)
-                $(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i]);
-        }
-
-        function showHotElement(){
-            const t = $(".hote");
-            for (let i=0; i<t.length; ++i)
-                t.eq(i).delay(i*300).fadeIn(1500);
-        }
-
-        $(document).ready(function () {
-            addHotElement(data);
-            //GloGet("http://{{host}}/index/getRank",null,showRankName);
-            showRankName(nam);
-            showHotElement();
-        })
-    </script>
 
 
 </head>
