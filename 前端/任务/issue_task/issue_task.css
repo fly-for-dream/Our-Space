@@ -84,10 +84,10 @@ a:active{
 }
 
 /****************************/
-/***********标签栏***********/
+/***********返回栏***********/
 /****************************/
 
-.post_lable{
+.task_lable{
     width: 90%;
     height: 35px;
     margin: auto;
@@ -100,24 +100,10 @@ a:active{
     background-color: #99CC99;
 }
 
-.left_lable> p{
+.left_lable> a{
     padding-top: 3px;
     text-align: center;
-    font-size: 16px;
-    color: green;
-}
-
-.right_lable{
-    width: 60px;
-    height: 35px;
-    float: right;
-    background-color: #99CC99;
-}
-
-.right_lable> a{
-    padding-top: 3px;
     display: block;
-    text-align: center;
     font-size: 16px;
     color: green;
 }
@@ -139,9 +125,8 @@ a:active{
     margin: auto;
 }
 
-
 /****************************/
-/***********发表*************/
+/***********发布*************/
 /****************************/
 
 .submit_button{
