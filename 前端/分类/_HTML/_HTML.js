@@ -30,7 +30,7 @@ function showNewPostElement(){
 function showQuestionAnswerElement(){
     const t = $("#question_answer").children(".hote");
     for (let i=0; i<t.length; ++i)
-        t.eq(i).delay(i*300).fadeIn(1500);
+    t.eq(i).delay(i*300).fadeIn(1500);
 }
 
 function showEssenceElement(){
