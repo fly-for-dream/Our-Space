@@ -47,8 +47,8 @@ $(document).ready(function () {
     showRankName(nam);
 
     showNewPostElement();
-    showQuestionAnswerElement();
-    showEssenceElement();
+    //showQuestionAnswerElement();
+    //showEssenceElement();
 });
 
 $(function () {
