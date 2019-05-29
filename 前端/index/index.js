@@ -3,7 +3,7 @@ document.write("<script type='text/javascript' src='../dataExamples.js'></script
 
 function addHotElement(data) {
 	for (let i=0; i<data.length; ++i)
-		$("#hotpostsbody").append(get_HotElement(data[i]));
+		$("#hotpostsbody").append(get_HotElement_B(data[i]));
 }
 
 function showRankName(data) {
