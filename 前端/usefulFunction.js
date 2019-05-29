@@ -33,6 +33,18 @@ function get_HotElement(e) {
             <div ><img class= \"u75\" src=\"images_index/u75.png\" alt=\"图标\"></div> </div>";
 }
 
+function get_Element_2(e) {
+    return "<div class = \"hote\" style='display: none'><div class=\"post_width\"> \
+            <div class=\"post1\"><a href=\"#\" ><p><span style='font-size: large'><b>" + e.name + "</b></span></p></a></div> \
+            <div class=\"post1_reply_num\"><p><span style='font-size: large'><b><i>" + e.type + "</i>></b></span></p></div> \
+            </div> \
+            <div class=\"post_width\"> \
+                <div class=\"post1_time\"><p><span>" + e.time + "</span></p></div> \
+            <div class=\"post1_browse_num\"><p><span>阅读" + e.read_num+'/评论'+ e.remark_num + "</span></p></div> \
+            </div> \
+            <div ><img class= \"u75\" src=\"../../index/images_index/u75.png\" alt=\"图标\"></div> </div>";
+}
+
 function include(s, k) {
     let t = s;
     for (let i=0; i<k; ++i) t+='../';
