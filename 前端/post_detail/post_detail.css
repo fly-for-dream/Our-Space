@@ -1,0 +1,244 @@
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/************主体************/
+/****************************/
+
+.main_body{
+    width: 95%;
+    margin: auto;
+}
+
+.first_label{
+    width: 100%;
+}
+
+.post_label{
+    width: 80px;
+    height: 30px;
+    background-color: #99CC99;
+    color: green;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.return{
+    width: 80px;
+    height: 30px;
+    background-color: #99CC99;
+    color: green;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.post_message,.reply1,.reply2,.reply{
+    margin: 0 0 10px;
+    width: 100%;
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    border-color: rgba(121,121,121,1);
+}
+
+.paging,.reply_now{
+    width: 100%;
+    float: left;
+}
+
+.poster,.replier{
+    background-color: lightgray;
+    width: 20%;
+    height: 25vh;
+    border-radius: 0;
+    float: left;
+}
+
+.post_content,.reply_content,.my_reply{
+    position: relative;
+    background-color: white;
+    width: 78%;
+    border-radius: 0;
+    height: 25vh;
+    float: right;
+}
+
+.post_img{
+    width: 95%;
+    height: 20vh;
+    margin: auto;
+}
+
+.post_name{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cut_off{
+    width: 100%;
+    height: 2px;
+}
+
+.post_title{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #949494;
+    margin: 10px;
+}
+
+.post_time{
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    color: #949494;
+}
+
+.content{
+    margin-top: 5px;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px;
+}
+
+.post_bottom{
+    position: absolute;
+    bottom: 5px;
+}
+
+._reply{
+    width: 30px;
+    height: 16px;
+    float: left;
+    text-align: center;
+}
+
+.post_collect{
+    width: 30px;
+    height: 16px;
+    float: left;
+    text-align: center;
+}
+
+.pagination {
+    position: relative;
+    left: 35%;
+    margin: 10px auto;
+    padding: auto;
+}
+
+.pagination > li >a{
+    color: black;
+    font-size: 15px;
+}
+
+.reply_now{
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 0;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: lightgray;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.form-control{
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.btn-outline-success{
+    margin-top: 10px;
+    border-color: #999999;
+}
+
+.btn-outline-success:hover{
+    color: #99CC99;
+}
