@@ -1,0 +1,176 @@
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/************主体************/
+/****************************/
+
+.main_frame{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.subtitle{
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    background-color: #99CC99;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.test_information,.quiz{
+    width: 98%;
+    margin: 10px auto;
+    background-color: #F6F4F0;
+    border-radius: 0;
+}
+
+.one_part{
+    width: 10%;
+    margin: 5px 0;
+    float: left;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.two_part{
+    width: 23%;
+    margin: 5px 0;
+    float: left;
+    padding-left: 2px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.test_explain{
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.question_title{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.question{
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.options > label{
+    width: 100%;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.options > label >textarea{
+    margin-left: -10px;
+}
+
+.textarea_text{
+    width: 90%;
+    margin: auto;
+}
+
+.submit_button{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn{
+    background-color: #99CC99;
+    margin: auto;
+}
+
+.btn-outline-success{
+    color: green;
+    border-color: #99CC99;
+}
+
