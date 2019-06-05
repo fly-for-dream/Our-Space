@@ -1,0 +1,74 @@
+
+div{
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login_size{
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.id_number{
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+._pwd{
+    width: 100%;
+    height: 25px;
+}
+
+.login_pwd{
+    width: 40%;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.forget_pwd{
+    width: 60%;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.forget_pwd > a{
+    color: #99CC99;
+}
+
+.forget_pwd > a:hover{
+    text-decoration: none;
+}
+
+label{
+    width: 100%;
+    border-radius: 5px;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn_login{
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 auto;
+    background-color: #99CC99;
+    color: white;
+}
+
+div > a{
+    color: #99CC99;
+}
+
+div > a:hover{
+    text-decoration: none;
+}
