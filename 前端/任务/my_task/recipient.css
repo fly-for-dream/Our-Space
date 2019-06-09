@@ -1,0 +1,51 @@
+
+
+.recipient_size{
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+.name_btn{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.recipient_name{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+    margin: auto;
+
+}
+
+.btn_recipient{
+    width: 50%;
+    float: right;
+    padding-right: 10px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #99CC99;
+    color: white;
+}
+
+.btn_return{
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #99CC99;
+    color: white;
+}
+
+.btn_return>a{
+    color: white;
+}
+
+.btn_return>a:hover{
+    text-decoration: none;
+    color: white;
+}
+
