@@ -1,14 +1,16 @@
-var errorResult = {
-	"code":"403",
-	"message":"请求失败",
-	"data":""
-}
+const errorResult = {
+	"code": "403",
+	"message": "请求失败",
+	"data": ""
+};
 
 //服务器地址
-var globalHost = "http://localhost:8080";
+// var globalHost = "http://localhost:8080";
+const globalHost = "http://129.211.65.94:8080/forum";
+
 
 //url：地址，data：表单数据,如:data={"id":123456,"name":name}
-//Post请求，返回一个封装好的data，格式同上的errorResut
+//Post请求，返回一个封装好的data，格式同上的errorResult
 function globalPost(url,data,callback) {
 	url = globalHost + url;
 	$.ajax({
@@ -51,7 +53,7 @@ function globalGet(url,data,callback) {
 //检测是否登录
 //返回true或false
 function globalIsLogin(callback){
-	var url = globalHost + "/check/isLogin";
+	const url = globalHost + "/check/isLogin";
 	$.ajax({
 		url:url,
 		type:"get",
