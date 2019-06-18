@@ -1,5 +1,6 @@
 document.write("<script type='text/javascript' src='../../usefulFunction.js'></script>");
 document.write("<script type='text/javascript' src='../../dataExamples.js'></script>");
+document.write("<script type='text/javascript' src='../../constAPI.js'></script>");
 
 function addNewPostElement(data) {
     for (let i=0; i<data.length; ++i)
@@ -46,11 +47,81 @@ function showEssenceElement(){
 }
 
 $(document).ready(function () {
-    addNewPostElement(data);
-    addQuestionAnswerElement(data);
-    addEssenceElement(data);
+    // addNewPostElement(data);
+    // addQuestionAnswerElement(data);
+    // addEssenceElement(data);
+    //
+    // showRankName(nam);
+    //
+    // showNewPostElement();
+    // showQuestionAnswerElement();
+    // showEssenceElement();
 
-    showRankName(nam);
+    globalGet("/index/getRank",null,function (d){
+        showRankName(d["data"]);
+    });
+    globalGet("/posts/getPostsList",{
+        type: 0,
+        pageNumber: 0
+    },function (d) {
+        const tmp=d["data"];
+        const data=[];
+        for (let i=0; i<tmp.length; i++) {
+            const b=tmp[i];
+            let e={
+                "name": b["title"],
+                "type": b["type"],
+                "time": b["updatetime"],
+                "read_num": b["remark"],
+                "remark_num": 250
+            };
+            data.push(e);
+        }
+        // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+        addNewPostElement(data);
+    });
+
+    globalGet("/posts/getPostsList",{
+        type: 1,
+        pageNumber: 0
+    },function (d) {
+        const tmp=d["data"];
+        const data=[];
+        for (let i=0; i<tmp.length; i++) {
+            const b=tmp[i];
+            let e={
+                "name": b["title"],
+                "type": b["type"],
+                "time": b["updatetime"],
+                "read_num": b["remark"],
+                "remark_num": 250
+            };
+            data.push(e);
+        }
+        // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+        addQuestionAnswerElement(data);
+    });
+
+    globalGet("/posts/getPostsList",{
+        type: 2,
+        pageNumber: 0
+    },function (d) {
+        const tmp=d["data"];
+        const data=[];
+        for (let i=0; i<tmp.length; i++) {
+            const b=tmp[i];
+            let e={
+                "name": b["title"],
+                "type": b["type"],
+                "time": b["updatetime"],
+                "read_num": b["remark"],
+                "remark_num": 250
+            };
+            data.push(e);
+        }
+        // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+        addEssenceElement(data);
+    });
 
     showNewPostElement();
     showQuestionAnswerElement();
