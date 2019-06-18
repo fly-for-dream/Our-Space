@@ -7,8 +7,10 @@ function addHotElement(data) {
 }
 
 function showRankName(data) {
-	for (let i=0; i<10; ++i)
-		$(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i]["name"]);
+	for (let i=0; i<Math.min(data.length,10); ++i) {
+		$(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i].name);
+	}
+
 }
 
 function showHotElement(){
@@ -20,12 +22,32 @@ function showHotElement(){
 $(document).ready(function () {
 	globalGet("/index/getRank",null,function (d){
 		// document.write(d["data"]);
+		console.log(d);
 		showRankName(d["data"]);
 	});
-	addHotElement(data);
+	globalGet("/index/getPostsList",null,function (d) {
+		const tmp=d["data"];
+		const data=[];
+		for (let i=0; i<tmp.length; i++) {
+			const b=tmp[i];
+			let e={
+				"name": b["title"],
+				"type": b["type"],
+				"time": b["updatetime"],
+				"read_num": b["remark"],
+				"remark_num": 250
+			};
+			data.push(e);
+		}
+		// for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+		console.log(data);
+		addHotElement(data);
+		showHotElement();
+	});
 	//GloGet("http://{{host}}/index/getRank",null,showRankName);
 	// showRankName(nam);
-	showHotElement();
+	// addHotElement(data);
+	// showHotElement();
 });
 
 

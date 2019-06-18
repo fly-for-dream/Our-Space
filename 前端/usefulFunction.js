@@ -1,4 +1,4 @@
-const NormalStatusCode = 200;
+var NormalStatusCode = 200;
 
 /**
  * @return {boolean}
