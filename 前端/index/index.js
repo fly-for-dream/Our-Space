@@ -21,8 +21,6 @@ function showHotElement(){
 
 $(document).ready(function () {
 	globalGet("/index/getRank",null,function (d){
-		// document.write(d["data"]);
-		console.log(d);
 		showRankName(d["data"]);
 	});
 	globalGet("/index/getPostsList",null,function (d) {
@@ -40,7 +38,6 @@ $(document).ready(function () {
 			data.push(e);
 		}
 		// for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
-		console.log(data);
 		addHotElement(data);
 		showHotElement();
 	});
