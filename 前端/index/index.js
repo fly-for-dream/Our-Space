@@ -8,7 +8,7 @@ function addHotElement(data) {
 
 function showRankName(data) {
 	for (let i=0; i<10; ++i)
-		$(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i].name);
+		$(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i]["name"]);
 }
 
 function showHotElement(){
@@ -19,7 +19,8 @@ function showHotElement(){
 
 $(document).ready(function () {
 	globalGet("/index/getRank",null,function (d){
-		showRankName(d[data]);
+		// document.write(d["data"]);
+		showRankName(d["data"]);
 	});
 	addHotElement(data);
 	//GloGet("http://{{host}}/index/getRank",null,showRankName);
