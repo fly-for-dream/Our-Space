@@ -56,13 +56,26 @@ input{
     border-radius: 5px;
 }
 
-.btn_login{
+.btn_login,.return{
     border-radius: 5px;
-    width: 100%;
+    width: 40%;
     font-size: 14px;
     margin: 0 auto;
     background-color: #99CC99;
     color: white;
+}
+
+.btn_login{
+    float: left;
+}
+
+.return{
+    float: right;
+}
+
+.messages{
+    width: 100%;
+    float: left;
 }
 
 div > a{
