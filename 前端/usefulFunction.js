@@ -88,7 +88,7 @@ function get_HotElement_B(e) {
                 <div class='card-header'>帖子</div>\
                 <div class='card-body'>\
                     <div class='post_width'>\
-                    <div class='post1'><a href='../post_detail/post_detail.html' ><p><span style='font-size: large'>" + e.name + "</span></p></a></div>\
+                    <div class='post1'><a href='../post_detail/post_detail.html?id="+e.id_num+"' ><p><span style='font-size: large'>" + e.name + "</span></p></a></div>\
                     <div class='post1_reply_num'><p><span style='font-size: large'><b>" + e.type + "</b></span></p></div>\
                     </div>\
                     <div class='post_width'>\

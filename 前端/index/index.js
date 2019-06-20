@@ -33,7 +33,8 @@ $(document).ready(function () {
 				"type": b["type"],
 				"time": b["updatetime"],
 				"read_num": b["remark"],
-				"remark_num": 250
+				"remark_num": 250,
+				"id_num" : b["id"]
 			};
 			data.push(e);
 		}
