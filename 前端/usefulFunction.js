@@ -1,5 +1,4 @@
 var NormalStatusCode = 200;
-let idnum=1;
 /**
  * @return {boolean}
  */
@@ -103,3 +102,14 @@ function include(s, k) {
     for (let i=0; i<k; ++i) t+='../';
     document.write("<script type='text/javascript' src="+ t +"></script>");
 }
+
+
+function get_url_parameter(name) {
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null) return  unescape(r[2]);
+    return null;
+}
+
+
+
