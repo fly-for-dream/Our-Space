@@ -1,6 +1,11 @@
 var NormalStatusCode = 200;
 var user_name_login = "name";
 var user_id_login = "";
+var search_word="";
+
+
+
+
 /**
  * @return {boolean}
  */
