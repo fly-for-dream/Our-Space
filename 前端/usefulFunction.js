@@ -97,7 +97,7 @@ function get_HotElement_B(e) {
                     </div>\
                 </div>\
             </div>\
-        </div>\";
+        </div>";
 }
 
 function include(s, k) {
