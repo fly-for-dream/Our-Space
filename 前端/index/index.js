@@ -18,6 +18,14 @@ function showHotElement(){
 		t.eq(i).delay(i*300).fadeIn(1500);
 }
 
+function searh(s) {
+	
+	window.location.href = "";
+}
+
+
+
+
 $(document).ready(function () {
 	globalGet("/index/getRank",null,function (d){
 		showRankName(d["data"]);
