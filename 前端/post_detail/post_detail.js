@@ -82,6 +82,18 @@ function add_reply_page(no) {
     })
 }
 
+function Reply_Tiezi(){
+    let postsid=get_tie_id();
+    let user=user_id_login;
+    let info=$("#_reply_content").text();
+    globalPost("/posts/replyPosts",{"postsid":postsid, "user":user, "info":info}, function (d) {
+        alert(d["message"]);
+        if (d["code"]===200) $("#_reply_content").text("");
+    })
+}
+
+
+
 $(document).ready(function () {
     page_url=window.location.href.toString();
     page_cnt = 1;
@@ -95,5 +107,8 @@ $(document).ready(function () {
     // for (let i=1; i<=page_cnt; i++) add_reply_page(i);
 
     add_reply_page(get_tie_page());
+
+    $("#_reply_user_name").text(user_name_login);
+    $("#_reply_user_img").attr("src",globalHost+"/index/getImage?id="+user_id_login);
 
 });
