@@ -96,4 +96,7 @@ $(document).ready(function () {
 
     add_reply_page(get_tie_page());
 
+    $("#_reply_user_name").text(user_name_login);
+    $("#_reply_user_img").attr("src",globalHost+"/index/getImage?id="+user_id_login);
+
 });
