@@ -8,8 +8,8 @@
     <script src="../cssjs/jquery.min.js"></script>
     <script src="../cssjs/popper.min.js"></script>
     <script src="../cssjs/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="task.css">
-    <script src="task.js"></script>
+    <link rel="stylesheet" href="search.css">
+    <script src="search.js"></script>
 </head>
     <body>
     <!--导航栏navbar-->
@@ -71,112 +71,52 @@
                 <div><a class="C++" href="../分类/C++/C++.html" ><img class="u22" src="../index/images_index/u22.png" alt="图标">C++</a></div>
             </div>
 
-            <!--任务详情-->
             <div class="col-sm-8">
-                <ul id="myTab" class="nav nav-tabs">
-                    <li class="active"><a href="#new_task" data-toggle="tab">最新任务</a></li>
-                    <li ><a href="#hot_task" data-toggle="tab">热门任务</a></li>
-                    <li ><a href="#pay_task" data-toggle="tab">付费任务</a></li>
-                    <li ><a href="#system_task" data-toggle="tab">系统任务</a></li>
-                    <li class="issue_task"><div><a href="issue_task/issue_task.html">发布任务</a></div></li>
-                    <li class="my_task"><div><a href="my_task/my_task.html">我的任务</a></div></li>
-                </ul>
-                <div id="myTabContent"  class="tab-content">
-                    <div class="tab-pane fade" id="new_task">
-                        <table class="table table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th class="first_task">回复</th>
-                                    <th class="first_task">浏览</th>
-                                    <th class="first_task_name">
-                                        发布者 + 发布时间
-                                        <div class="_button"><button type="button" class="btn btn-outline-success">承接任务</button></div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="first_task">0</th>
-                                    <th class="first_task">3</th>
-                                    <th class="first_task_name">求教怎么在谷歌浏览器里查看js内存泄漏和内存分布情况</th>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table table-bordered">
-                            <tbody>
-                            <tr>
-                                <th class="first_task">回复</th>
-                                <th class="first_task">浏览</th>
-                                <th class="first_task_name">
-                                    发布者 + 发布时间
-                                    <div class="_button"><button type="button" class="btn btn-outline-success">承接任务</button></div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th class="first_task">100</th>
-                                <th class="first_task">20</th>
-                                <th class="first_task_name">任务详情</th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tab-pane fade" id="hot_task">
-                        <table class="table table-bordered">
-                            <tbody>
-                            <tr>
-                                <th class="first_task">回复</th>
-                                <th class="first_task">浏览</th>
-                                <th class="first_task_name">
-                                    发布者 + 发布时间
-                                    <div class="_button"><button type="button" class="btn btn-outline-success">承接任务</button></div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th class="first_task">100</th>
-                                <th class="first_task">20</th>
-                                <th class="first_task_name">热门任务详情</th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tab-pane fade" id="pay_task">
-                        <table class="table table-bordered">
-                            <tbody>
-                            <tr>
-                                <th class="first_task">回复</th>
-                                <th class="first_task">浏览</th>
-                                <th class="first_task_name">
-                                    发布者 + 发布时间
-                                    <div class="_button"><button type="button" class="btn btn-outline-success">承接任务</button></div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th class="first_task">100</th>
-                                <th class="first_task">20</th>
-                                <th class="first_task_name">付费任务详情</th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tab-pane fade" id="system_task">
-                        <table class="table table-bordered">
-                            <tbody>
-                            <tr>
-                                <th class="first_task">回复</th>
-                                <th class="first_task">浏览</th>
-                                <th class="first_task_name">
-                                    系统 + 发布时间
-                                    <div class="_button"><button type="button" class="btn btn-outline-success">承接任务</button></div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th class="first_task">100</th>
-                                <th class="first_task">20</th>
-                                <th class="first_task_name">系统任务详情</th>
-                            </tr>
-                            </tbody>
-                        </table>
+                <div class='container'>
+                    <div class='card'>
+                        <div class='card-header'>帖子</div>
+                        <div class='card-body'>
+                            <div class='post_width'>
+                                <div class='post1'><a href='../post_detail/post_detail.html?id="+e.id_num+"&page=1"+"' ><p><span style='font-size: large'>关于HTML的分类问题</span></p></a></div>
+                                <div class='post1_reply_num'><p><span style='font-size: large'><b>HTML</b></span></p></div>
+                            </div>
+                            <div class='post_width'>
+                                <div class='post1_time'><p><span>2019/06/01</span></p></div>
+                                <div class='post1_browse_num'><p><span>阅读2000/评论250</span></p></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                <div class='container'>
+                    <div class='card'>
+                        <div class='card-header'>帖子</div>
+                        <div class='card-body'>
+                            <div class='post_width'>
+                                <div class='post1'><a href='../post_detail/post_detail.html?id="+e.id_num+"&page=1"+"' ><p><span style='font-size: large'>HTML是什么</span></p></a></div>
+                                <div class='post1_reply_num'><p><span style='font-size: large'><b>HTML</b></span></p></div>
+                            </div>
+                            <div class='post_width'>
+                                <div class='post1_time'><p><span>2019/06/01</span></p></div>
+                                <div class='post1_browse_num'><p><span>阅读2000/评论250</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='container'>
+                    <div class='card'>
+                        <div class='card-header'>帖子</div>
+                        <div class='card-body'>
+                            <div class='post_width'>
+                                <div class='post1'><a href='../post_detail/post_detail.html?id="+e.id_num+"&page=1"+"' ><p><span style='font-size: large'>HTML5和XML的优劣</span></p></a></div>
+                                <div class='post1_reply_num'><p><span style='font-size: large'><b>HTML</b></span></p></div>
+                            </div>
+                            <div class='post_width'>
+                                <div class='post1_time'><p><span>2019/06/01</span></p></div>
+                                <div class='post1_browse_num'><p><span>阅读2000/评论250</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!--每日回答榜-->
