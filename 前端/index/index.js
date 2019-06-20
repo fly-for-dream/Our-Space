@@ -20,8 +20,9 @@ function showHotElement(){
 
 function searh() {
 	search_word=$("#_search_word").val();
-	console.log("dfs"+search_word);
-	window.location.href = "../search/search.html";
+	document.writeln(search_word);
+	// console.log("dfs"+search_word);
+	// window.location.href = "../search/search.html";
 }
 
 
