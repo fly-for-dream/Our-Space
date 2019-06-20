@@ -18,9 +18,10 @@ function showHotElement(){
 		t.eq(i).delay(i*300).fadeIn(1500);
 }
 
-function searh(s) {
-	
-	window.location.href = "";
+function searh() {
+	search_word=$("#_search_word").val();
+	console.log("dfs"+search_word);
+	window.location.href = "../search/search.html";
 }
 
 
