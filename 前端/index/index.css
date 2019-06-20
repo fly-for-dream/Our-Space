@@ -225,6 +225,9 @@ a:active{
     padding: 0;
 }
 
+.card-header{
+    background-color: #99CC99;
+}
 
 /****************************/
 /***********每日学习榜*******/
