@@ -81,8 +81,6 @@ function get_HotElement_B(e) {
         //     </div>\
         // </div>\"
 
-
-    idnum=e.id_num;
     return "<div class='container'>\
             <div class='card'>\
                 <div class='card-header'>帖子</div>\
