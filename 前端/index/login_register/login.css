@@ -7,7 +7,7 @@ div{
 }
 
 .login_size{
-    width: 300px;
+    width: 100%;
     height: 200px;
     margin: 100px auto;
 }
@@ -17,6 +17,7 @@ div{
     text-align: left;
     padding-left: 10px;
     padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 ._pwd{
@@ -56,24 +57,27 @@ input{
     border-radius: 5px;
 }
 
-.btn_login,.return{
-    border-radius: 5px;
-    width: 40%;
-    font-size: 14px;
-    margin: 0 auto;
-    background-color: #99CC99;
-    color: white;
-}
+/*.btn_login,.return{*/
+/*    border-radius: 5px;*/
+/*    width: 40%;*/
+/*    font-size: 14px;*/
+/*    margin: 5px auto;*/
+/*    background-color: #99CC99;*/
+/*    color: white;*/
+/*}*/
 
 .btn_login{
-    float: left;
+    /*float: left;*/
+    margin-left: 30%;
 }
 
 .return{
-    float: right;
+    /*float: right;*/
+    /*margin-right: 50px;*/
 }
 
 .messages{
+    margin-top: 5px;
     width: 100%;
     float: left;
 }
@@ -84,4 +88,13 @@ div > a{
 
 div > a:hover{
     text-decoration: none;
+}
+
+h4{
+    margin-top: 100px;
+}
+
+form{
+    width: 50%;
+    margin: auto;
 }

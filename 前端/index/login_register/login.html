@@ -10,46 +10,45 @@
         <script src="../../cssjs/bootstrap.min.js"></script>
         <link rel="stylesheet" href="login.css">
     </head>
-<!--    -->
-<!--    <body>-->
-<!--        <div class="login_size">-->
-<!--            <h4>登录</h4>-->
-<!--            <div >-->
-<!--                <div class="id_number">学号或手机号</div>-->
-<!--                <label><input type="text"></label>-->
-<!--            </div>-->
-<!--            <div >-->
-<!--                <div class="_pwd">-->
-<!--                    <div class="login_pwd">密码</div>-->
-<!--                    <div class="forget_pwd"><a href="#" >忘记密码</a></div>-->
-<!--                </div>-->
-<!--                <label><input type="text"></label>-->
-<!--            </div>-->
-<!--            <button type="submit" class="btn_login">登录</button>-->
-<!--            <button type="submit" class="return">返回</button>-->
-<!--            <div class="messages">登录即代表您同意本网站的《服务条款》</div>-->
-<!--        </div>-->
-<!--    </body>-->
+    <body>
 
     <div class="container">
-        <h2>登录</h2>
+        <h4>登录</h4>
+<!--        <form>-->
+<!--            <div class="form-group">-->
+<!--                <label for="te">用户名:</label>-->
+<!--                <input type="text" class="form-control" id="te" placeholder="Enter email">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="pwd">密码:</label>-->
+<!--                <input type="password" class="form-control" id="pwd" placeholder="Enter password">-->
+<!--            </div>-->
+<!--            <div class="form-check">-->
+<!--                <label class="form-check-label">-->
+<!--                    <input class="form-check-input" type="checkbox"> Remember me-->
+<!--                </label>-->
+<!--            </div>-->
+<!--            <button type="submit" class="btn btn-primary">登录</button>-->
+<!--            <button type="submit" class="btn btn-primary">返回</button>-->
+<!--        </form>-->
+<!--    </div>-->
         <form>
             <div class="form-group">
-                <label for="te">用户名:</label>
-                <input type="text" class="form-control" id="te" placeholder="Enter email">
+                <div class="id_number">用户名：</div>
+                <label><input type="text" class="form-control" placeholder=" Enter name"></label>
             </div>
             <div class="form-group">
-                <label for="pwd">密码:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                <div class="_pwd">
+                    <div class="login_pwd">密码：</div>
+                </div>
+                <label><input type="text" class="form-control" placeholder=" Enter password"></label>
             </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Remember me
-                </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <!--    <button type="submit" class="btn_login">登录</button>-->
+            <!--    <button type="submit" class="return">返回</button>-->
+            <button type="submit" class="btn btn-primary return">返回</button>
+            <button type="submit" class="btn btn-primary btn_login">登录</button>
+            <!--    <div class="messages">注册即代表您同意本网站的《服务条款》</div>-->
         </form>
-    </div>
-
+    </body>
 
 </html>
