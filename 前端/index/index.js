@@ -10,7 +10,6 @@ function showRankName(data) {
 	for (let i=0; i<Math.min(data.length,10); ++i) {
 		$(".rank_num").children("a").eq(i).text(/*data[i].name*/data[i].name);
 	}
-
 }
 
 function showHotElement(){
