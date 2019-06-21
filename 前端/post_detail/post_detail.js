@@ -11,19 +11,25 @@ let the_post_user_id;
 
 function getUserName(id) {
     let t;
+    // alert(id);
     globalPost("/user/getUserInfo",{"id":id},function (d) {
-        if (d["code"]===200) t=d["code"]["name"]; else t="name";
+        if (d["code"]===200) t=d["data"]["name"]; else t="name";
+        // alert(id+" "+t);
+        return t;
     });
-    return t;
 }
 
 function creat_Tiezi(e) {
-    e["name"]=getUserName(e["userid"]);
+    // alert("e"+e["userid"]);
+    // alert(e["userid"]);
+    let tt=getUserName(e["userid"]);
+    // alert("tt"+tt);
+    e["name"]=tt;
     return e;
 }
 
 function creat_reply_Tiezi(e) {
-    e["name"]=getUserName(e["user"]);
+    for (let i=0; i<e.length; i++) e[i]["name"]=getUserName(e[i]["user"]);
     return e;
 }
 
@@ -34,9 +40,16 @@ function show_Tiezi(e) {
     $("#_type_id").text(e["type"]);
     $("#_img_id").attr("src",globalHost+"/user/getImage?id="+e["userid"]);
     $("#_content_id").text(e["info"]);
-    $("#_name_id").text(e["name"]);
+    // alert(e["name"]);
     $("#_img_id").css("width","100%");
     $("#_img_id").css("height","20vh");
+
+    globalPost("/user/getUserInfo",{"id":the_post_user_id},function (d) {
+        if (d["code"]===200) $("#_name_id").text(d["data"]["name"]); else alert(201);
+
+    });
+
+
 }
 
 function get_reply_tiezi_Html(e) {
@@ -113,11 +126,11 @@ function Reply_Tiezi(){
     let postsid=get_tie_id();
     let user=getSession("user_id_login");
     let info=$("#_reply_content").val();
-    alert(postsid);
-    alert(user);
-    alert(info);
+    // alert(postsid);
+    // alert(user);
+    // alert(info);
     globalPost("/posts/replyPosts",{"postsid":postsid, "user":user, "info":info, "top":0}, function (d) {
-        alert(d["message"]);
+        // alert(d["message"]);
         if (d["code"]===200) $("#_reply_content").text("");
     })
 }
@@ -162,8 +175,8 @@ $(document).ready(function () {
         // alert(user_id_login);
         // alert(globalHost+"/index/getImage?id="+user_id_login);
 
-        alert(the_post_user_id);
-        alert(user_id_login);
+        // alert("the_post_user_id"+the_post_user_id);
+        // alert("user_id_login"+user_id_login);
         if (the_post_user_id!==user_id_login) $("#btn3").attr("hidden","hidden");
     });
 
