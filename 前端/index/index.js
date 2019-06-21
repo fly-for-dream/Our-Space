@@ -1,5 +1,6 @@
 document.write("<script type='text/javascript' src='../usefulFunction.js'></script>");
 document.write("<script type='text/javascript' src='../dataExamples.js'></script>");
+//document.write("<script type='text/javascript' src='../jquerysession.js'></script>");
 
 function addHotElement(data) {
 	for (let i=0; i<data.length; ++i)
@@ -19,10 +20,16 @@ function showHotElement(){
 }
 
 function searh() {
-	search_word=$("#_search_word").val();
-	document.writeln(search_word);
+	// search_word=$("#_search_word").val();
+	let s=$("#_search_word").val();
+	if (s==="") {
+		alert("请输入搜索内容!!!");
+		return;
+	}
+	setSession("search_word",s);
+	// document.writeln(search_word);
 	// console.log(search_word);
-	// window.location.href = "../search/search.html?page=1";
+	window.location.href = "../search/search.html?page=1";
 }
 
 

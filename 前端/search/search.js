@@ -2,12 +2,14 @@ document.write("<script type='text/javascript' src='../usefulFunction.js'></scri
 document.write("<script type='text/javascript' src='../dataExamples.js'></script>");
 document.write("<script type='text/javascript' src='../constAPI.js'></script>");
 
+
 var pagenum=1;
 var page_url;
-var pae_cnt;
+var page_cnt;
 
 
 function addHotElement(data) {
+    // document.writeln(data.length);
     for (let i=0; i<data.length; ++i)
         $("#_search_tie_zi").append(get_HotElement_B(data[i]));
 }
@@ -29,11 +31,6 @@ function change(s,x) {
     return s.substring(0,t+1)+x;
 }
 
-function getpage(s) {
-    let t=s.lastIndexOf('=');
-    return s.substring(t+1,t.length);
-}
-
 function get_tie_id() {
     return get_url_parameter("id");
 }
@@ -43,32 +40,38 @@ function get_tie_page() {
 }
 
 function go_next() {
-    pagenum=parseInt(getpage(page_url));
+    pagenum=parseInt(get_url_parameter("page"));
     if (pagenum<page_cnt) pagenum++; else alert("这已经是最后一页了！！！");
     window.location.href=change(page_url, pagenum);
 }
 
 function go_prec() {
-    pagenum=parseInt(getpage(page_url));
+    pagenum=parseInt(get_url_parameter("page"));
     if (pagenum>1) pagenum--; else alert("这已经是第一页了！！！");
     window.location.href=change(page_url, pagenum);
 }
 
 $(document).ready(function () {
 
+    page_cnt=1;
+
     globalGet("/index/getRank",null,function (d){
         showRankName(d["data"]);
     });
 
-    document.writeln(search_word+111);
+    let search_word=getSession("search_word");
+    // document.writeln(search_word);
+    removeSession("search_word");
+    // document.writeln(get_url_parameter("page"));
+    // document.writeln(search_word);
+
     globalGet("/posts/getSearch",{"value":search_word, "pageNum":get_url_parameter("page")},function (d) {
-        document.writeln(get_url_parameter("page"));
-        document.writeln(search_word+111);
         if (d["code"]!==200) {
             alert("搜索结果为空！");
             return;
         }
         const tmp=d["data"];
+        // document.writeln(tmp.length);
         const data=[];
         for (let i=0; i<tmp.length; i++) {
             const b=tmp[i];
