@@ -54,14 +54,15 @@ function go_prec() {
 $(document).ready(function () {
 
     page_cnt=1;
+    page_url=window.location.href.toString();
 
     globalGet("/index/getRank",null,function (d){
         showRankName(d["data"]);
     });
 
-    let search_word=getSession("search_word").toString();
+    let search_word=getSession("search_word");
     // document.writeln(search_word);
-    removeSession("search_word");
+    // removeSession("search_word");
     // document.writeln(get_url_parameter("page"));
     // document.writeln(search_word);
 
@@ -74,6 +75,7 @@ $(document).ready(function () {
             return;
         }
         const tmp=d["data"];
+        page_cnt=Math.ceil((tmp.length)/15);
         // document.writeln(tmp.length);
         alert(tmp.length);
         const data=[];
