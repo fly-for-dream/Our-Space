@@ -25,6 +25,9 @@ function Register() {
     }
 
     globalPost("/login/register",{"name":name, "pwd": s},function (d) {
+
+        console.log(d);
+
         if (d["code"]===200) {
             alert("注册成功!!!");
         } else alert("注册失败!!!");

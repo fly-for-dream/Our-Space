@@ -70,13 +70,13 @@
                 <!--选项卡-->
                 <div class="_bottom">
                     <ul id="myTab" class="nav nav-tabs">
-                        <li class="active"><a href="#_homepage" data-toggle="tab">个人首页</a></li>
-                        <li ><a href="#_information" data-toggle="tab">资料</a></li>
+<!--                        <li class="active"><a href="#_homepage" data-toggle="tab">个人首页</a></li>-->
+                        <li class="active"><a href="#_information" data-toggle="tab">资料</a></li>
                         <li ><a href="#_theme" data-toggle="tab">主题</a></li>
                         <li ><a href="#_reply" data-toggle="tab">回复</a></li>
-                        <li ><a href="#_collect" data-toggle="tab">收藏</a></li>
-                        <li ><a href="#_friend" data-toggle="tab">好友</a></li>
-                        <li ><a href="#_message" data-toggle="tab">消息</a></li>
+<!--                        <li ><a href="#_collect" data-toggle="tab">收藏</a></li>-->
+                        <li ><a href="#_friend" data-toggle="tab">管理用户</a></li>
+                        <li ><a href="#_message" data-toggle="tab">管理帖子</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,14 +84,7 @@
             <!--具体信息-->
             <div id="myTabContent"  class="tab-content">
                 <!--个人首页-->
-                <div class="tab-pane fade in active" id="_homepage">
-                    <div class="second_row">
-                        <div class="new_reply">最新回复</div>
-                        <div class="_img"><img src="../index/images_index/u678.png" alt="图标"></div>
-                        <div class="get_more">更多</div>
-                    </div>
-                    <div class="specific">回复详情</div>
-                </div>
+
 
                 <!--资料-->
                 <div class="tab-pane fade information" id="_information">
@@ -148,7 +141,7 @@
                     </table>
                     <div class="introduction">自我简介</div>
                     <div class="introduction_detail">本教程将向您讲解 Bootstrap 框架的基础，通过学习这些内容，您将可以轻松地创建 Web 项目。</div>
-                    <div class="edit">编辑</div>
+                    <button class="btn btn0">编辑</button>
                 </div>
 
                 <!--主题-->
@@ -204,73 +197,100 @@
                 </div>
 
                 <!--收藏-->
-                <div class="tab-pane fade collect" id="_collect">
-                    <div class="collect_row">
-                        <div class="collect_title">标题</div>
-                        <div class="collect_author">作者</div>
-                        <div class="collect_catalogue">目录</div>
-                        <div class="collect_choice">选择</div>
-                    </div>
-                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
-                    <div class="collect_row">
-                        <div class="collect_title">1标题</div>
-                        <div class="collect_author">1作者</div>
-                        <div class="collect_catalogue">1目录</div>
-                        <div class="collect_choice"><input type="checkbox"></div>
-                    </div>
-                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
-                    <div class="collect_row">
-                        <div class="collect_title">2标题</div>
-                        <div class="collect_author">2作者</div>
-                        <div class="collect_catalogue">2目录</div>
-                        <div class="collect_choice"><input type="checkbox"></div>
-                    </div>
-                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
-                    <div class="collect_row">
-                        <div class="collect_title">3标题</div>
-                        <div class="collect_author">3作者</div>
-                        <div class="collect_catalogue">3目录</div>
-                        <div class="collect_choice"><input type="checkbox"></div>
-                    </div>
-                    <div class="collect_row">
-                        <div class="collect_check_all">全选</div>
-                        <div class="collect_del">删除</div>
-                    </div>
-                </div>
+<!--                <div class="tab-pane fade collect" id="_collect">-->
+<!--                    <div class="collect_row">-->
+<!--                        <div class="collect_title">标题</div>-->
+<!--                        <div class="collect_author">作者</div>-->
+<!--                        <div class="collect_catalogue">目录</div>-->
+<!--                        <div class="collect_choice">选择</div>-->
+<!--                    </div>-->
+<!--                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>-->
+<!--                    <div class="collect_row">-->
+<!--                        <div class="collect_title">1标题</div>-->
+<!--                        <div class="collect_author">1作者</div>-->
+<!--                        <div class="collect_catalogue">1目录</div>-->
+<!--                        <div class="collect_choice"><input type="checkbox"></div>-->
+<!--                    </div>-->
+<!--                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>-->
+<!--                    <div class="collect_row">-->
+<!--                        <div class="collect_title">2标题</div>-->
+<!--                        <div class="collect_author">2作者</div>-->
+<!--                        <div class="collect_catalogue">2目录</div>-->
+<!--                        <div class="collect_choice"><input type="checkbox"></div>-->
+<!--                    </div>-->
+<!--                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>-->
+<!--                    <div class="collect_row">-->
+<!--                        <div class="collect_title">3标题</div>-->
+<!--                        <div class="collect_author">3作者</div>-->
+<!--                        <div class="collect_catalogue">3目录</div>-->
+<!--                        <div class="collect_choice"><input type="checkbox"></div>-->
+<!--                    </div>-->
+<!--                    <div class="collect_row">-->
+<!--                        <div class="collect_check_all">全选</div>-->
+<!--                        <div class="collect_del">删除</div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <!--好友-->
+<!--                <div class="tab-pane fade friend" id="_friend">-->
+<!--                    <div class="friend_row">-->
+<!--                        <div class="friend_portrait">头像</div>-->
+<!--                        <div class="friend_name">用户名</div>-->
+<!--                        <div class="friend_time">加友时间</div>-->
+<!--                        <div class="friend_choice">选择</div>-->
+<!--                    </div>-->
+<!--                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>-->
+<!--                    <div class="friend_row">-->
+<!--                        <div class="friend_portrait"><img src="#" alt="头像"></div>-->
+<!--                        <div class="friend_name">1好友</div>-->
+<!--                        <div class="friend_time">1加友时间</div>-->
+<!--                        <div class="friend_choice"><input type="checkbox"></div>-->
+<!--                    </div>-->
+<!--                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>-->
+<!--                    <div class="friend_row">-->
+<!--                        <div class="friend_portrait"><img src="#" alt="头像"></div>-->
+<!--                        <div class="friend_name">2好友</div>-->
+<!--                        <div class="friend_time">2加友时间</div>-->
+<!--                        <div class="friend_choice"><input type="checkbox"></div>-->
+<!--                    </div>-->
+<!--                    <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>-->
+<!--                    <div class="friend_row">-->
+<!--                        <div class="friend_portrait"><img src="#" alt="头像"></div>-->
+<!--                        <div class="friend_name">3好友</div>-->
+<!--                        <div class="friend_time">3加友时间</div>-->
+<!--                        <div class="friend_choice"><input type="checkbox"></div>-->
+<!--                    </div>-->
+<!--                    <div class="collect_row">-->
+<!--                        <div class="friend_check_all">全选</div>-->
+<!--                        <div class="friend_del">删除</div>-->
+<!--                        <div class="verify_friend"><a href="#" >待验证好友</a></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                <!--管理用户-->
                 <div class="tab-pane fade friend" id="_friend">
                     <div class="friend_row">
-                        <div class="friend_portrait">头像</div>
                         <div class="friend_name">用户名</div>
-                        <div class="friend_time">加友时间</div>
                         <div class="friend_choice">选择</div>
                     </div>
                     <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
                     <div class="friend_row">
-                        <div class="friend_portrait"><img src="#" alt="头像"></div>
-                        <div class="friend_name">1好友</div>
-                        <div class="friend_time">1加友时间</div>
-                        <div class="friend_choice"><input type="checkbox"></div>
+                        <div class="friend_name">梁伟浩</div>
+                        <div class="friend_choice"><label><input type="checkbox"></label></div>
                     </div>
                     <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
                     <div class="friend_row">
-                        <div class="friend_portrait"><img src="#" alt="头像"></div>
-                        <div class="friend_name">2好友</div>
-                        <div class="friend_time">2加友时间</div>
-                        <div class="friend_choice"><input type="checkbox"></div>
+                        <div class="friend_name">李进</div>
+                        <div class="friend_choice"><label><input type="checkbox"></label></div>
                     </div>
                     <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
                     <div class="friend_row">
-                        <div class="friend_portrait"><img src="#" alt="头像"></div>
-                        <div class="friend_name">3好友</div>
-                        <div class="friend_time">3加友时间</div>
-                        <div class="friend_choice"><input type="checkbox"></div>
+                        <div class="friend_name">刘俊英</div>
+                        <div class="friend_choice"><label><input type="checkbox"></label></div>
                     </div>
                     <div class="collect_row">
-                        <div class="friend_check_all">全选</div>
-                        <div class="friend_del">删除</div>
-                        <div class="verify_friend"><a href="#" >待验证好友</a></div>
+                        <button class="btn btn1">全选</button>
+                        <button class="btn btn2">删除</button>
                     </div>
                 </div>
 
@@ -278,38 +298,38 @@
                 <div class="tab-pane fade message" id="_message">
                     <div class="message_row">
                         <div class="message_title">标题</div>
-                        <div class="message_addresser">发件人</div>
+                        <div class="message_addresser">发帖人</div>
                         <div class="message_time">时间</div>
-                        <div class="message_sort">类别</div>
+                        <div class="message_sort">分类</div>
                         <div class="message_choice">选择</div>
                     </div>
                     <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
                     <div class="message_row">
-                        <div class="message_title">1标题</div>
-                        <div class="message_addresser">1发件人</div>
+                        <div class="message_title">HTML测试</div>
+                        <div class="message_addresser">李浩东</div>
                         <div class="message_time">2018-07-30 12:25</div>
-                        <div class="message_sort">好友</div>
-                        <div class="message_choice"><input type="checkbox"></div>
+                        <div class="message_sort">HTML</div>
+                        <div class="message_choice"><label><input type="checkbox"></label></div>
                     </div>
                     <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
                     <div class="message_row">
-                        <div class="message_title">2标题</div>
-                        <div class="message_addresser">2发件人</div>
-                        <div class="message_time">2时间</div>
-                        <div class="message_sort">好友</div>
-                        <div class="message_choice"><input type="checkbox"></div>
+                        <div class="message_title">JAVA测试</div>
+                        <div class="message_addresser">李浩东</div>
+                        <div class="message_time">2018-07-30 12:25</div>
+                        <div class="message_sort">JAVA</div>
+                        <div class="message_choice"><label><input type="checkbox"></label></div>
                     </div>
                     <div ><img class= "u678" src="../index/images_index/u678.png" alt="图标"></div>
                     <div class="message_row">
-                        <div class="message_title">3标题</div>
-                        <div class="message_addresser">3发件人</div>
-                        <div class="message_time">3时间</div>
-                        <div class="message_sort">系统</div>
-                        <div class="message_choice"><input type="checkbox"></div>
+                        <div class="message_title">CSS测试</div>
+                        <div class="message_addresser">李浩东</div>
+                        <div class="message_time">2018-07-30 12:25</div>
+                        <div class="message_sort">CSS</div>
+                        <div class="message_choice"><label><input type="checkbox"></label></div>
                     </div>
                     <div class="message_row">
-                        <div class="message_check_all">全选</div>
-                        <div class="message_del">删除</div>
+                        <button class="btn btn3">全选</button>
+                        <button class="btn btn4">删除</button>
                     </div>
                 </div>
 
