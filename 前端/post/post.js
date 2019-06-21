@@ -24,6 +24,7 @@ function post() {
     },function (d) {
         if (d["code"]===200) {
             alert("发帖成功!!");
+            window.location.href="../post_detail/post_detail.html?id="+d["data"]+"&page=1";
             return;
         } else alert("发帖失败!!");
     });
