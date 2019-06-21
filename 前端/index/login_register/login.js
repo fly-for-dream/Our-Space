@@ -29,13 +29,16 @@ function try_to_login() {
 
         if (d["code"]===200) {
             alert("登录成功!!!");
+            setSession("user_name_login",name);
+            setSession("user_id_login",d["data"]);
+            setSession("isLogin",1);
+
+
         } else {
             alert("登录失败!!!可能是用户名密码不匹配!!");
             return;
         }
-        setSession("user_name_login",name);
-        setSession("user_id_login",d["data"]);
-        setSession("isLogin",1);
+        
 
         globalGet("/login/isAdmin",{"name":name}, function (d) {
             if (d["code"]===200 && d["data"]) setSession("isAdmin",1); else setSession("isAdmin",0);
