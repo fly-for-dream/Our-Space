@@ -414,7 +414,9 @@ pre code{
                                                             </li>
 
                             <ul class="nav list-group">
-                                                                   
+                                <li>
+                                        <a href="#cdcddad455d7449998a34e8cae888a70">获取任务列表</a>
+                                    </li>                                   
                             </ul>
                         </ul><span>班级接口</span>
                         <ul class="nav list-group bs_list_group">
@@ -422,7 +424,9 @@ pre code{
                                                             </li>
 
                             <ul class="nav list-group">
-                                                                   
+                                <li>
+                                        <a href="#1fb9f1becaf94ce1a57ae4e70fc35a6f">获取班级信息</a>
+                                    </li>                                   
                             </ul>
                         </ul><span>登录接口</span>
                         <ul class="nav list-group bs_list_group">
@@ -431,6 +435,10 @@ pre code{
 
                             <ul class="nav list-group">
                                 <li>
+                                        <a href="#f3ac2928a57f4f159a4beb014e830bd2">是否为管理员</a>
+                                    </li><li>
+                                        <a href="#37360bd4e36b43afa033a06e6f3cc430">是否为教师</a>
+                                    </li><li>
                                         <a href="#e4181b9f82d8410b88aea89f563c3001">注册接口</a>
                                     </li><li>
                                         <a href="#aa955161b3c44d3c87dbc0a1e74ac7f9">登录接口</a>
@@ -442,7 +450,11 @@ pre code{
                                                             </li>
 
                             <ul class="nav list-group">
-                                                                   
+                                <li>
+                                        <a href="#689c491b81204dce968fce2f55ab20bd">根据用户id获取用户的头像</a>
+                                    </li><li>
+                                        <a href="#da4f8431ed3a4712a32e469c908a2682">根据id获取个人信息（登录后才可）</a>
+                                    </li>                                   
                             </ul>
                         </ul>
                         <ul class="nav list-group">
@@ -1232,7 +1244,7 @@ pre code{
                                                 是
                                                                                                 </td>
                                             <td>帖子的id</td>
-                                            <td>15586232803646</td>
+                                            <td>15610469507743</td>
                                         </tr>                                    </tbody>
                                 </table>
 
@@ -1250,16 +1262,18 @@ pre code{
     "code": 200,
     "message": "获取成功",
     "data": {
-        "id": "15586232803646",
+        "id": "15610468858932",
         "userid": "15586219479869",
-        "title": "测试1",
-        "type": "html",
-        "info": "这是一个测试的数据",
+        "title": "发帖测试",
+        "type": "java",
+        "info": "这是一个测试的发帖",
+        "number": 1,//查看数
+        "readnum": 0,//回复数
         "authority": "1",
         "operator": "15586219479869",
-        "creattime": "2019-05-23T00:00:00.000+0000",
-        "updatetime": "2019-05-23T00:00:00.000+0000",
-        "remark": "1"
+        "creattime": "2019-06-20T16:08:06.000 0000",
+        "updatetime": "2019-06-20T16:08:06.000 0000",
+        "remark": null
     }
 }</code>
                             </pre>
@@ -1497,6 +1511,14 @@ pre code{
                                                                                                 </td>
                                             <td>页码：从0开始的数字</td>
                                             <td>0</td>
+                                        </tr><tr>
+                                            <td>rule</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>查询的规则，根据时间creattime，浏览数：readnum，回复数：number</td>
+                                            <td>creattime</td>
                                         </tr>                                    </tbody>
                                 </table>
 
@@ -1522,8 +1544,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "1"
         },
         {
@@ -1534,8 +1556,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "2"
         },
         {
@@ -1546,8 +1568,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "3"
         },
         {
@@ -1558,8 +1580,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "4"
         },
         {
@@ -1570,8 +1592,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "5"
         },
         {
@@ -1582,8 +1604,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "6"
         },
         {
@@ -1594,8 +1616,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "7"
         },
         {
@@ -1606,8 +1628,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "8"
         },
         {
@@ -1618,8 +1640,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "9"
         },
         {
@@ -1630,8 +1652,8 @@ pre code{
             "info": "这是一个测试的数据",
             "authority": "1",
             "operator": "15586219479869",
-            "creattime": "2019-05-23T00:00:00.000+0000",
-            "updatetime": "2019-05-23T00:00:00.000+0000",
+            "creattime": "2019-05-23T00:00:00.000 0000",
+            "updatetime": "2019-05-23T00:00:00.000 0000",
             "remark": "0"
         }
     ]
@@ -1641,11 +1663,238 @@ pre code{
                             
                         </div><h1>任务接口</h1>
                     
-                    <h1>班级接口</h1>
-                    
-                    <h1>登录接口</h1>
+                    <div class="api-one">
+                            <h3 id="cdcddad455d7449998a34e8cae888a70">获取任务列表</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=cdcddad455d7449998a34e8cae888a70"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=cdcddad455d7449998a34e8cae888a70"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：GET</p>
+                            <p>
+                                请求地址：http://{{host}}/task/getTaskList                            </p>
+
+                            
+                            <table class="table table-hover">
+                                    <colgroup>
+                                        <col class="col-xs-2">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-7">
+                                        <col class="col-xs-2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th><span class="label label-success">Query参数名</span></th>
+                                        <th>类型</th>
+                                        <th>必需</th>
+                                        <th>描述</th>
+                                        <th>示例 e.g.</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>sorttype</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr><tr>
+                                            <td>pageNumber</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>                                    </tbody>
+                                </table>
+
+                            
+                            
+                            
+                            
+                        </div><h1>班级接口</h1>
                     
                     <div class="api-one">
+                            <h3 id="1fb9f1becaf94ce1a57ae4e70fc35a6f">获取班级信息</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=1fb9f1becaf94ce1a57ae4e70fc35a6f"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=1fb9f1becaf94ce1a57ae4e70fc35a6f"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：GET</p>
+                            <p>
+                                请求地址：http://{{host}}/class/getClassInfo                            </p>
+
+                            
+                            <table class="table table-hover">
+                                    <colgroup>
+                                        <col class="col-xs-2">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-7">
+                                        <col class="col-xs-2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th><span class="label label-success">Query参数名</span></th>
+                                        <th>类型</th>
+                                        <th>必需</th>
+                                        <th>描述</th>
+                                        <th>示例 e.g.</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>id</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr><tr>
+                                            <td>pageNumber</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>                                    </tbody>
+                                </table>
+
+                            
+                            
+                            
+                            
+                        </div><h1>登录接口</h1>
+                    
+                    <div class="api-one">
+                            <h3 id="f3ac2928a57f4f159a4beb014e830bd2">是否为管理员</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=f3ac2928a57f4f159a4beb014e830bd2"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=f3ac2928a57f4f159a4beb014e830bd2"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：GET</p>
+                            <p>
+                                请求地址：http://{{host}}/login/isAdmin                            </p>
+
+                            
+                            <table class="table table-hover">
+                                    <colgroup>
+                                        <col class="col-xs-2">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-7">
+                                        <col class="col-xs-2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th><span class="label label-success">Query参数名</span></th>
+                                        <th>类型</th>
+                                        <th>必需</th>
+                                        <th>描述</th>
+                                        <th>示例 e.g.</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>name</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>用户表的name//即登录账户用的name</td>
+                                            <td>13067272181</td>
+                                        </tr>                                    </tbody>
+                                </table>
+
+                            
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>判断是否为管理员</p><p>是的话为true</p><p>否则为false</p></div>
+                                </div>
+                                </p>
+                            
+                            
+                        </div><div class="api-one">
+                            <h3 id="37360bd4e36b43afa033a06e6f3cc430">是否为教师</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=37360bd4e36b43afa033a06e6f3cc430"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=37360bd4e36b43afa033a06e6f3cc430"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：GET</p>
+                            <p>
+                                请求地址：http://{{host}}/login/isTeacher                            </p>
+
+                            
+                            <table class="table table-hover">
+                                    <colgroup>
+                                        <col class="col-xs-2">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-7">
+                                        <col class="col-xs-2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th><span class="label label-success">Query参数名</span></th>
+                                        <th>类型</th>
+                                        <th>必需</th>
+                                        <th>描述</th>
+                                        <th>示例 e.g.</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>name</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>用户登录用的name</td>
+                                            <td>1306727218</td>
+                                        </tr>                                    </tbody>
+                                </table>
+
+                            
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>发送name判断是否为教师</p><p>是的话为true</p><p>不是的话为false</p><p><br></p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "是教师",
+    "data": true
+}</code>
+                            </pre>
+                                </div>
+                            
+                        </div><div class="api-one">
                             <h3 id="e4181b9f82d8410b88aea89f563c3001">注册接口</h3>
                             <p>
                                 <a target="_blank"
@@ -1759,7 +2008,156 @@ pre code{
                             
                         </div><h1>个人信息接口</h1>
                     
-                                    
+                    <div class="api-one">
+                            <h3 id="689c491b81204dce968fce2f55ab20bd">根据用户id获取用户的头像</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=689c491b81204dce968fce2f55ab20bd"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=689c491b81204dce968fce2f55ab20bd"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：GET</p>
+                            <p>
+                                请求地址：http://{{host}}/user/getImage                            </p>
+
+                            
+                            <table class="table table-hover">
+                                    <colgroup>
+                                        <col class="col-xs-2">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-7">
+                                        <col class="col-xs-2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th><span class="label label-success">Query参数名</span></th>
+                                        <th>类型</th>
+                                        <th>必需</th>
+                                        <th>描述</th>
+                                        <th>示例 e.g.</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>id</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>用户id</td>
+                                            <td>15586219479869</td>
+                                        </tr><tr>
+                                            <td></td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>                                    </tbody>
+                                </table>
+
+                            
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>根据用户id返回用户的头像</p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs"><img src='http://129.211.65.94:8080/forum/user/getImage?id=15586219479869' />
+</code>
+                            </pre>
+                                </div>
+                            
+                        </div><div class="api-one">
+                            <h3 id="da4f8431ed3a4712a32e469c908a2682">根据id获取个人信息（登录后才可）</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=da4f8431ed3a4712a32e469c908a2682"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=da4f8431ed3a4712a32e469c908a2682"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：POST</p>
+                            <p>
+                                请求地址：http://{{host}}/user/getUserInfo                            </p>
+
+                            
+                            
+
+                                                                <table class="table table-hover">
+                                            <colgroup>
+                                                <col class="col-xs-2">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-7">
+                                                <col class="col-xs-2">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><span class="label label-success">Body参数名</span></th>
+                                                <th>类型</th>
+                                                <th>必需</th>
+                                                <th>描述</th>
+                                                <th>示例 e.g.</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                    <td>id</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td></td>
+                                                    <td>15586219479869</td>
+                                                </tr><tr>
+                                                    <td></td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>                                            </tbody>
+                                        </table>
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>根据用户的id获取用户的信息</p><p>接口需要登录后使用</p><p>205：用户未登录</p><p>201：无此用户</p><p><br></p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "获取成功",
+    "data": {
+        "id": "15586219479869",
+        "customid": "15586219479869",
+        "name": "测试账号1",
+        "sex": 0,
+        "birth": "2019-05-23",
+        "signature": "测试",//这个是用户的个性签名
+        "city": "福州",
+        "operator": "",
+        "creattime": "2019-05-23T22:54:07.000 0000",
+        "updatetime": "2019-05-23T22:54:09.000 0000",
+        "remark": ""
+    }
+}</code>
+                            </pre>
+                                </div>
+                            
+                        </div>                
                 <h1 id="t_api_doc">附录</h1>
                 <div class="api-one">
                     <h3 id="envs"> 环境变量</h3>
