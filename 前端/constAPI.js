@@ -6,7 +6,7 @@ var errorResult = {
 
 //服务器地址
 // var globalHost = "http://localhost:8080";
-const globalHost = "http://129.211.65.94:8080/forum";
+var globalHost = "http://129.211.65.94:8080/forum";
 
 
 //url：地址，data：表单数据,如:data={"id":123456,"name":name}
