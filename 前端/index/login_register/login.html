@@ -34,19 +34,19 @@
 <!--    </div>-->
         <form>
             <div class="form-group">
-                <div class="id_number">用户名：</div>
+                <div class="id_number" id="_user_name_id">用户名：</div>
                 <label><input type="text" class="form-control" placeholder=" Enter name"></label>
             </div>
             <div class="form-group">
                 <div class="_pwd">
-                    <div class="login_pwd">密码：</div>
+                    <div class="login_pwd" id="_mima_id">密码：</div>
                 </div>
                 <label><input type="text" class="form-control" placeholder=" Enter password"></label>
             </div>
             <!--    <button type="submit" class="btn_login">登录</button>-->
             <!--    <button type="submit" class="return">返回</button>-->
-            <button type="submit" class="btn btn-primary return">返回</button>
-            <button type="submit" class="btn btn-primary btn_login">登录</button>
+            <button type="submit" class="btn btn-primary return" onclick="return_homepage()">返回</button>
+            <button type="submit" class="btn btn-primary btn_login" onclick="try_to_login()">登录</button>
             <!--    <div class="messages">注册即代表您同意本网站的《服务条款》</div>-->
         </form>
     </body>

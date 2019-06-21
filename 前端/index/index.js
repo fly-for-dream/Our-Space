@@ -36,6 +36,8 @@ function searh() {
 
 
 $(document).ready(function () {
+	// setSession("isLogin",0);
+
 	globalGet("/index/getRank",null,function (d){
 		showRankName(d["data"]);
 	});
