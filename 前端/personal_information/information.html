@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="../cssjs/bootstrap.min.css">
     <script src="../cssjs/jquery.min.js"></script>
     <script src="../cssjs/popper.min.js"></script>
+    <script type="text/javascript" src="../constAPI.js"></script>
     <script src="../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="information.css">
     <script src="information.js"></script>
 </head>
-    <body>
+    <body onload="load()">
     <!--导航栏navbar-->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container">
@@ -41,7 +42,7 @@
                 </form>
                 <ul class="navbar-nav">
                     <li class="nav-item" id="islogin1">
-                        <a class="nav-link" href="../personal_information/information.html">头像</a>
+                        <a id="toname" class="nav-link" href="../personal_information/information.html"></a>
                     </li>
                     <li class="registernow nav-item" id="islogin2">
                         <a class="nav-link" href="#">退出</a>
@@ -84,12 +85,6 @@
             <div id="myTabContent"  class="tab-content">
                 <!--个人首页-->
                 <div class="tab-pane fade in active" id="_homepage">
-                    <div class="first_row">
-                        <div class="friend_recent">好友近况</div>
-                        <div class="_img"><img src="../index/images_index/u678.png" alt="图标"></div>
-                        <div class="get_more">更多</div>
-                    </div>
-                    <div class="specific">具体近况</div>
                     <div class="second_row">
                         <div class="new_reply">最新回复</div>
                         <div class="_img"><img src="../index/images_index/u678.png" alt="图标"></div>
