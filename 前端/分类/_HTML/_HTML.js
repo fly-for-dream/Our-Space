@@ -60,68 +60,88 @@ $(document).ready(function () {
     globalGet("/index/getRank",null,function (d){
         showRankName(d["data"]);
     });
-    globalGet("/posts/getPostsList",{
-        type: 0,
-        pageNumber: 0
-    },function (d) {
-        const tmp=d["data"];
-        const data=[];
-        for (let i=0; i<tmp.length; i++) {
-            const b=tmp[i];
-            let e={
-                "name": b["title"],
-                "type": b["type"],
-                "time": b["updatetime"],
-                "read_num": b["remark"],
-                "remark_num": 250
-            };
-            data.push(e);
-        }
-        // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
-        addNewPostElement(data);
-    });
+
 
     globalGet("/posts/getPostsList",{
-        type: 1,
-        pageNumber: 0
+        "type": get_url_parameter("type"),
+        "pageNumber": 0,
+        "rule": "creattime"
     },function (d) {
-        const tmp=d["data"];
-        const data=[];
-        for (let i=0; i<tmp.length; i++) {
-            const b=tmp[i];
-            let e={
-                "name": b["title"],
-                "type": b["type"],
-                "time": b["updatetime"],
-                "read_num": b["remark"],
-                "remark_num": 250
-            };
-            data.push(e);
+        if (d["code"]===200) {
+            const tmp=d["data"];
+            const data=[];
+            for (let i=0; i<tmp.length; i++) {
+                const b=tmp[i];
+                let e={
+                    "name": b["title"],
+                    "type": b["type"],
+                    "time": b["updatetime"],
+                    "read_num": b["readnum"],
+                    "remark_num": b["number"]
+                };
+                data.push(e);
+            }
+            // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+            addNewPostElement(data);
         }
-        // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
-        addQuestionAnswerElement(data);
+
     });
 
+
+
     globalGet("/posts/getPostsList",{
-        type: 2,
-        pageNumber: 0
+        "type": get_url_parameter("type"),
+        "pageNumber": 0,
+        "rule": "readnum"
     },function (d) {
-        const tmp=d["data"];
-        const data=[];
-        for (let i=0; i<tmp.length; i++) {
-            const b=tmp[i];
-            let e={
-                "name": b["title"],
-                "type": b["type"],
-                "time": b["updatetime"],
-                "read_num": b["remark"],
-                "remark_num": 250
-            };
-            data.push(e);
+        if (d["code"]===200) {
+            const tmp=d["data"];
+            const data=[];
+            for (let i=0; i<tmp.length; i++) {
+                const b=tmp[i];
+                let e={
+                    "name": b["title"],
+                    "type": b["type"],
+                    "time": b["updatetime"],
+                    "read_num": b["readnum"],
+                    "remark_num": b["number"]
+                };
+                data.push(e);
+            }
+            // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+            addQuestionAnswerElement(data);
         }
-        // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
-        addEssenceElement(data);
+
     });
+
+
+
+    globalGet("/posts/getPostsList",{
+        "type": get_url_parameter("type"),
+        "pageNumber": 0,
+        "rule": "number"
+    },function (d) {
+        if (d["code"]===200) {
+            const tmp=d["data"];
+            const data=[];
+            for (let i=0; i<tmp.length; i++) {
+                const b=tmp[i];
+                let e={
+                    "name": b["title"],
+                    "type": b["type"],
+                    "time": b["updatetime"],
+                    "read_num": b["readnum"],
+                    "remark_num": b["number"]
+                };
+                data.push(e);
+            }
+            // for (let i=0; i<data.length; i++) document.writeln(data[i].read_num);
+            addEssenceElement(data);
+        }
+
+    });
+
+
 
     showNewPostElement();
     showQuestionAnswerElement();
