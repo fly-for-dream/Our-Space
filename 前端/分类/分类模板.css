@@ -1,0 +1,61 @@
+
+
+body{
+    font-size: 16px;
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********分类*************/
+/****************************/
+.col-sm-2 > div{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    height: 32px;
+}
+
+.col-sm-2 > div > a{
+    color: #999999;
+}
+
+.col-sm-2 > div > a > img{
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+.classity{
+    width:100%;
+    height: 36px!important;
+    background-color: #99CC99;
+}
+
+.classity > p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
