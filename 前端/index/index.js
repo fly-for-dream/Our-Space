@@ -68,8 +68,12 @@ $(document).ready(function () {
 
 
 	let isLogin=getSession("isLogin");
-	if (isLogin===null) isLogin=0;
-	if (!isLogin) return;
+	if (isLogin===undefined) isLogin=0;
+	// alert(isLogin);
+	if (isLogin===0) {
+		// alert("dfddf");
+		return;
+	}
 	$("#notlogin1").attr("hidden","hidden");
 	$("#notlogin2").attr("hidden","hidden");
 	$("#islogin1").removeAttr("hidden");
@@ -78,13 +82,17 @@ $(document).ready(function () {
 });
 
 function exitLogin() {
-	setSession("isLogin",0);
+	alert("已退出！！");
+	removeSession("isLogin");
 	removeSession("user_name_login");
 	removeSession("user_id_login");
 	$("#islogin1").attr("hidden","hidden");
 	$("#islogin2").attr("hidden","hidden");
 	$("#notlogin1").removeAttr("hidden");
 	$("#notlogin2").removeAttr("hidden");
+	window.location.href="index.html";
+	// alert("tuichu");
+	// window.location.reload();
 }
 
 
