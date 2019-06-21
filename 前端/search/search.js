@@ -59,7 +59,7 @@ $(document).ready(function () {
         showRankName(d["data"]);
     });
 
-    let search_word=getSession("search_word");
+    let search_word=getSession("search_word").toString();
     // document.writeln(search_word);
     removeSession("search_word");
     // document.writeln(get_url_parameter("page"));
@@ -71,7 +71,7 @@ $(document).ready(function () {
             return;
         }
         const tmp=d["data"];
-        // document.writeln(tmp.length);
+        document.writeln(tmp.length);
         const data=[];
         for (let i=0; i<tmp.length; i++) {
             const b=tmp[i];
@@ -79,8 +79,8 @@ $(document).ready(function () {
                 "name": b["title"],
                 "type": b["type"],
                 "time": b["updatetime"],
-                "read_num": b["remark"],
-                "remark_num": 250,
+                "read_num": b["readnum"],
+                "remark_num": b["number"],
                 "id_num" : b["id"]
             };
             data.push(e);

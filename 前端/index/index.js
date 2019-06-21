@@ -48,8 +48,8 @@ $(document).ready(function () {
 				"name": b["title"],
 				"type": b["type"],
 				"time": b["updatetime"],
-				"read_num": b["remark"],
-				"remark_num": 250,
+				"read_num": b["readnum"],
+				"remark_num": b["number"],
 				"id_num" : b["id"]
 			};
 			data.push(e);
