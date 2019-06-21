@@ -144,7 +144,12 @@ $(document).ready(function () {
 
     add_reply_page(get_tie_page());
 
+    let user_name_login=getSession("user_name_login");
+    let user_id_login=getSession("user_id_login");
     $("#_reply_user_name").text(user_name_login);
-    $("#_reply_user_img").attr("src",globalHost+"/index/getImage?id="+user_id_login);
+    $("#_reply_user_img").attr("src",globalHost+"/user/getImage?id="+user_id_login);
+    alert(user_name_login);
+    alert(user_id_login);
+    alert(globalHost+"/index/getImage?id="+user_id_login);
 
 });
