@@ -42,6 +42,11 @@ function get_tie_page() {
 function go_next() {
     pagenum=parseInt(get_url_parameter("page"));
     if (pagenum<page_cnt) pagenum++; else alert("这已经是最后一页了！！！");
+    globalGet("/posts/getSearch",{"value":search_word, "pageNum":pagenum},function (d) {
+        if (d["code"] !== 200) {
+            if (d["data"].length!==0) pagenum++; else alert("这已经是最后一页了！！！");
+        }
+    });
     window.location.href=change(page_url, pagenum);
 }
 
