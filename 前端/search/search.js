@@ -65,13 +65,17 @@ $(document).ready(function () {
     // document.writeln(get_url_parameter("page"));
     // document.writeln(search_word);
 
-    globalGet("/posts/getSearch",{"value":search_word, "pageNum":get_url_parameter("page")},function (d) {
+    let now_page=parseInt(get_url_parameter("page"))-1;
+    alert(now_page);
+    alert(search_word);
+    globalGet("/posts/getSearch",{"value":search_word, "pageNum":now_page},function (d) {
         if (d["code"]!==200) {
             alert("搜索结果为空！");
             return;
         }
         const tmp=d["data"];
-        document.writeln(tmp.length);
+        // document.writeln(tmp.length);
+        alert(tmp.length);
         const data=[];
         for (let i=0; i<tmp.length; i++) {
             const b=tmp[i];
