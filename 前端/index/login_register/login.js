@@ -22,12 +22,12 @@ function try_to_login() {
 
         console.log(d);
 
-        // if (d["code"]===200) {
-        //     alert("登录成功!!!");
-        // } else {
-        //     alert("登录失败!!!可能是用户名密码不匹配!!");
-        //     return;
-        // }
+        if (d["code"]===200) {
+            alert("登录成功!!!");
+        } else {
+            alert("登录失败!!!可能是用户名密码不匹配!!");
+            return;
+        }
         setSession("user_name_login",name);
         setSession("user_id_login",d["data"]["userid"]);
         setSession("isLogin",1);
@@ -40,6 +40,6 @@ function try_to_login() {
             if (d["code"]===200 && d["data"]) setSession("isTeacher",1); else setSession("isTeacher",0);
         });
 
-        // return_homepage();
+        return_homepage();
     })
 }
