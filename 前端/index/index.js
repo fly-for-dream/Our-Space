@@ -64,6 +64,17 @@ $(document).ready(function () {
 	// showRankName(nam);
 	// addHotElement(data);
 	// showHotElement();
+
+
+	let isLogin=getSession("isLogin");
+	if (isLogin===null) isLogin=0;
+	if (!isLogin) return;
+	$("#notlogin1").hidden="hidden";
+	$("#notlogin2").hidden="hidden";
+	$("#islogin1").removeAttr("hidden");
+	$("#islogin2").remove("hidden");
+
+
 });
 
 

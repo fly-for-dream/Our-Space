@@ -2,6 +2,10 @@ document.write("<script type='text/javascript' src='../../usefulFunction.js'></s
 document.write("<script type='text/javascript' src='../../dataExamples.js'></script>");
 document.write("<script type='text/javascript' src='../../constAPI.js'></script>");
 
+function return_homepage() {
+    //window.location.href="../index.html";
+}
+
 function Register() {
     let name=$("#_user_name_id").text();
     if (name==="") {
@@ -22,10 +26,6 @@ function Register() {
         } else alert("注册失败!!!");
     })
 
-}
-
-function return_homepage() {
-    window.location.href="../index.html";
 }
 
 
