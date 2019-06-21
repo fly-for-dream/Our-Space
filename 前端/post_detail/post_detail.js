@@ -6,6 +6,8 @@ var pagenum=1;
 var page_url;
 var pae_cnt;
 
+let the_post_user_id;
+
 
 function getUserName(id) {
     let t;
@@ -26,6 +28,7 @@ function creat_reply_Tiezi(e) {
 }
 
 function show_Tiezi(e) {
+    the_post_user_id=e["userid"];
     $("#_time_id").text(e["updatetime"]);
     $("#_title_id").text(e["title"]);
     $("#_type_id").text(e["type"]);
@@ -108,7 +111,7 @@ function add_reply_page(no) {
 
 function Reply_Tiezi(){
     let postsid=get_tie_id();
-    let user=getSession("user_id_login");;
+    let user=getSession("user_id_login");
     let info=$("#_reply_content").val();
     alert(postsid);
     alert(user);
@@ -158,5 +161,7 @@ $(document).ready(function () {
     // alert(user_name_login);
     // alert(user_id_login);
     // alert(globalHost+"/index/getImage?id="+user_id_login);
+
+    if (the_post_user_id!==user_id_login) $("#btn3").attr("hidden","hidden");
 
 });
