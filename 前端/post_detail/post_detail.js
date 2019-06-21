@@ -65,10 +65,15 @@ function get_reply_tiezi_Html(e) {
     //           <div class="content">'+ e["info"] + '</div>\
     //         </div>\
     //     </div>';
-    return '<div class="reply">\
+
+    let id=e["user"],name;
+    globalPost("/user/getUserInfo",{"id":id},function (d) {
+        if (d["code"]===200) name=d["data"]["name"]; else name="name";
+
+        return '<div class="reply">\
                 <div class="replier">\
                   <div class="post_img"><img src='+ globalHost+"/user/getImage?id="+e["user"] +' alt="头像"></div>\
-                 <div class="post_name">' +e["name"]+ '</div>\
+                 <div class="post_name">' +  name +  '</div>\
                 </div>\
                 <div class="reply_content">\
                   <div class="post_time">'+ e["updatetime"] +'\
@@ -77,7 +82,10 @@ function get_reply_tiezi_Html(e) {
                   <div class="cut_off"><img src="../index/images_index/u678.png" alt="分割线"></div>\
                   <div class="content">'+ e["info"] + '</div>\
                 </div>\
-              </div>'
+              </div>';
+
+    });
+
 }
 
 function change(s,x) {
@@ -117,7 +125,7 @@ function add_reply_Tiezi(data) {
 
 function add_reply_page(no) {
     globalGet("/posts/getReply",{"postsid" : get_tie_id(), "pageNum" : no}, function (d) {
-        let e=creat_reply_Tiezi(d["data"]);
+        let e=d["data"];
         add_reply_Tiezi(e);
     })
 }
