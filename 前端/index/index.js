@@ -75,13 +75,17 @@ $(document).ready(function () {
 	$("#islogin1").removeAttr("hidden");
 	$("#islogin2").removeAttr("hidden");
 
-
-
-
-
 });
 
-
+function exitLogin() {
+	setSession("isLogin",0);
+	removeSession("user_name_login");
+	removeSession("user_id_login");
+	$("#islogin1").attr("hidden","hidden");
+	$("#islogin2").attr("hidden","hidden");
+	$("#notlogin1").removeAttr("hidden");
+	$("#notlogin2").removeAttr("hidden");
+}
 
 
 
