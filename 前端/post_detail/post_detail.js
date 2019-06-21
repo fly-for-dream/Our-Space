@@ -106,17 +106,42 @@ function get_tie_page() {
     return get_url_parameter("page");
 }
 
+// function go_next() {
+//     pagenum=parseInt(getpage(page_url));
+//     if (pagenum<page_cnt) pagenum++; else alert("这已经是最后一页了！！！");
+//     window.location.href=change(page_url, pagenum);
+// }
+//
+// function go_prec() {
+//     pagenum=parseInt(getpage(page_url));
+//     if (pagenum>1) pagenum--; else alert("这已经是第一页了！！！");
+//     window.location.href=change(page_url, pagenum);
+// }
+
 function go_next() {
-    pagenum=parseInt(getpage(page_url));
-    if (pagenum<page_cnt) pagenum++; else alert("这已经是最后一页了！！！");
-    window.location.href=change(page_url, pagenum);
+    let pagenum=parseInt(get_url_parameter("page"));
+
+    globalGet("/posts/getReply",{"postsid" : get_tie_id(), "pageNum" : pagenum}, function (d) {
+        if (d["code"] === 200) {
+            // alert("len"+d["data"].length);
+            if (d["data"].length>0) {
+                pagenum++;
+                // alert("233");
+            }else alert("这已经是最后一页了！！！");
+        }
+        // alert("pagenum"+pagenum);
+        window.location.href=change(page_url, pagenum);
+    });
+
 }
 
 function go_prec() {
-    pagenum=parseInt(getpage(page_url));
+    let pagenum=parseInt(get_url_parameter("page"));
     if (pagenum>1) pagenum--; else alert("这已经是第一页了！！！");
     window.location.href=change(page_url, pagenum);
 }
+
+
 
 function add_reply_Tiezi(data) {
     for (let i=0; i<data.length; ++i)
