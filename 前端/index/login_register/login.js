@@ -13,8 +13,8 @@ function try_to_login() {
     // document.writeln(s);
     // document.writeln(name);
 
-    alert(name);
-    alert(s);
+    // alert(name);
+    // alert(s);
 
     if (name==="") {
         alert("用户名不能为空!!");
@@ -27,24 +27,24 @@ function try_to_login() {
         // document.writeln(2333);
         // document.writeln(d["code"]);
 
-        // if (d["code"]===200) {
-        //     alert("登录成功!!!");
-        // } else {
-        //     alert("登录失败!!!可能是用户名密码不匹配!!");
-        //     return;
-        // }
-        // setSession("user_name_login",name);
-        // setSession("user_id_login",d["data"]);
-        // setSession("isLogin",1);
-        //
-        // globalGet("/login/isAdmin",{"name":name}, function (d) {
-        //     if (d["code"]===200 && d["data"]) setSession("isAdmin",1); else setSession("isAdmin",0);
-        // });
-        //
-        // globalGet("/login/isTeacher",{"name":name}, function (d) {
-        //     if (d["code"]===200 && d["data"]) setSession("isTeacher",1); else setSession("isTeacher",0);
-        // });
-        //
-        // return_homepage();
+        if (d["code"]===200) {
+            alert("登录成功!!!");
+        } else {
+            alert("登录失败!!!可能是用户名密码不匹配!!");
+            return;
+        }
+        setSession("user_name_login",name);
+        setSession("user_id_login",d["data"]);
+        setSession("isLogin",1);
+
+        globalGet("/login/isAdmin",{"name":name}, function (d) {
+            if (d["code"]===200 && d["data"]) setSession("isAdmin",1); else setSession("isAdmin",0);
+        });
+
+        globalGet("/login/isTeacher",{"name":name}, function (d) {
+            if (d["code"]===200 && d["data"]) setSession("isTeacher",1); else setSession("isTeacher",0);
+        });
+
+        return_homepage();
     })
 }

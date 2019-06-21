@@ -6,13 +6,22 @@ var pagenum=1;
 var page_url;
 var pae_cnt;
 
+
+function getUserName() {
+    let t;
+    globalPost("/user/getUserInfo",{"id":getSession("user_id_login")},function (d) {
+        if (d["code"]===200) t=d["code"]["name"]; else t="name";
+    });
+    return t;
+}
+
 function creat_Tiezi(e) {
-    e["name"]="name";
+    e["name"]=getUserName();
     return e;
 }
 
 function creat_reply_Tiezi(e) {
-    e["name"]="name";
+    e["name"]=getUserName();
     return e;
 }
 
@@ -102,6 +111,20 @@ function Reply_Tiezi(){
     globalPost("/posts/replyPosts",{"postsid":postsid, "user":user, "info":info}, function (d) {
         alert(d["message"]);
         if (d["code"]===200) $("#_reply_content").text("");
+    })
+}
+
+
+function dele_tiezi() {
+    let userid=getSession("user_id_login");
+    globalPost("/posts/removePosts",{"postsid":get_tie_id(),"userid":userid},function (d) {
+        let e=d["data"];
+        if (e) {
+            alert("删除成功!!");
+            window.location.reload();
+        } else {
+            alert("删除失败!!");
+        }
     })
 }
 
