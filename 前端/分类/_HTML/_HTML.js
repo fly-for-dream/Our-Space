@@ -138,3 +138,8 @@ $(document).ready(function () {
 $(function () {
     $('#myTab li:eq(0) a').tab('show');
 });
+
+function post() {
+    setSession("tiezi_type","HTML");
+}
+
