@@ -10,6 +10,7 @@
     <script src="../cssjs/popper.min.js"></script>
     <script src="../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="修改帖子.css">
+    <script src="修改帖子.js"></script>
 </head>
 <body>
 <!--导航栏navbar-->
@@ -55,13 +56,13 @@
 
 <!--标签 返回栏-->
 <div class="post_lable">
-    <div class="left_lable"><p>帖子</p></div>
-    <div class="right_lable"><a href="../post_detail/post_detail.html">返回</a></div>
+    <div class="left_lable"><p id="_type_id">帖子</p></div>
+    <div class="right_lable"><a href="../post_detail/post_detail.html" id="_return_href">返回</a></div>
 </div>
 
 <!--标题栏-->
 <div class="input_text">
-    <input type="text" class="form-control" placeholder="JS加载修改帖子的标题">
+    <input type="text" class="form-control" placeholder="JS加载修改帖子的标题" id="_title_id">
 </div>
 
 <!--输入框-->
@@ -70,12 +71,12 @@
     <div>
 
     </div>
-    <textarea class="form-control" rows="5" placeholder="JS加载修改帖子的内容"></textarea>
+    <textarea class="form-control" rows="5" placeholder="JS加载修改帖子的内容" id="_content_id"></textarea>
 </div>
 
 <!--发表帖子按钮-->
 <div class="submit_button">
-    <button type="button" class="btn btn-outline-success">修改帖子</button>
+    <button type="button" class="btn btn-outline-success" onclick="update_it()">修改帖子</button>
 </div>
 
 </body>

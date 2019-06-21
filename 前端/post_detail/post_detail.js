@@ -182,6 +182,18 @@ function dele_tiezi() {
     })
 }
 
+function update_tiezi() {
+
+    removeSession("tmp_title");
+    removeSession("tmp_content");
+    setSession("tmp_title",$("#_title_id").text());
+    setSession("tmp_content",$("#_content_id").text());
+    setSession("tmp_url",window.location.href);
+
+    let ss="修改帖子.html";
+    window.location.href=ss+"?type="+$("#_type_id").text().toLowerCase();
+}
+
 
 
 $(document).ready(function () {
