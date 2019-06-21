@@ -61,87 +61,99 @@
                 <tr>
                     <th class="icon"><img src="../index/images_index/u13.png" alt="图标">   HTML</th>
                     <th class="courseware">
-                        <div>HTML教学课件1</div>
-                        <div>HTML教学课件2</div>
-                        <div>HTML教学课件3</div>
+                        <button class="btn">HTML资料1</button>
+                        <button class="btn">HTML资料2</button>
+                        <button class="btn">HTML资料3</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u15.png" alt="图标">   C   </th>
                     <th class="courseware">
-                        <div>C教学课件1</div>
-                        <div>C教学课件2</div>
-                        <div>C教学课件3</div>
+                        <button class="btn">C资料1</button>
+                        <button class="btn">C资料2</button>
+                        <button class="btn">C资料3</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u16.png" alt="图标">   CSS </th>
                     <th class="courseware">
-                        <div>CSS教学课件1</div>
-                        <div>CSS教学课件2</div>
-                        <div>CSS教学课件3</div>
+                        <button class="btn">CSS资料1</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u21.png" alt="图标">   JAVA</th>
                     <th class="courseware">
-                        <div>JAVA教学课件1</div>
-                        <div>JAVA教学课件2</div>
-                        <div>JAVA教学课件3</div>
-                        <div>JAVA教学课件4</div>
+                        <button class="btn">JAVA资料1</button>
+                        <button class="btn">JAVA资料2</button>
+                        <button class="btn">JAVA资料3</button>
+                        <button class="btn">JAVA资料4</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u17.png" alt="图标">   HTTP</th>
                     <th class="courseware">
-                        <div>HTTP教学课件1</div>
-                        <div>HTTP教学课件2</div>
-                        <div>HTTP教学课件3</div>
+                        <button class="btn">HTTP资料1</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u18.png" alt="图标">   JS  </th>
                     <th class="courseware">
-                        <div>JS教学课件1</div>
-                        <div>JS教学课件2</div>
+                        <button class="btn">JS资料1</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u20.png" alt="图标">   PY  </th>
                     <th class="courseware">
-                        <div>PY教学课件1</div>
-                        <div>PY教学课件2</div>
-                        <div>PY教学课件3</div>
+                        <button class="btn">PY资料1</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u19.png" alt="图标">   PHP </th>
                     <th class="courseware">
-                        <div>PHP教学课件1</div>
-                        <div>PHP教学课件2</div>
-                        <div>PHP教学课件3</div>
-                        <div>PHP教学课件4</div>
-                        <div>PHP教学课件5</div>
+                        <button class="btn">PHP资料1</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u14.png" alt="图标">   C#  </th>
                     <th class="courseware">
-                        <div>C#教学课件1</div>
-                        <div>C#教学课件2</div>
-                        <div>C#教学课件3</div>
+                        <button class="btn">C#资料1</button>
                     </th>
                 </tr>
                 <tr>
                     <th class="icon"><img src="../index/images_index/u15.png" alt="图标">   C++ </th>
                     <th class="courseware">
-                        <div>C++教学课件1</div>
-                        <div>C++教学课件2</div>
-                        <div>C++教学课件3</div>
+                        <button class="btn">C++资料1</button>
                     </th>
                 </tr>
             </tbody>
         </table>
+    </div>
+<!--    <a class="data_upload" href="upload.html"><button class="btn">上传资料</button></a>-->
+
+    <!--很丑的上传文件-->
+<!--    <div class="container mt-3">-->
+<!--        <form >-->
+
+<!--            <input type="file" id="myFile" name="filename2">-->
+
+<!--            <div class="mt-3">-->
+<!--                <button>上传</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+
+    <!--上传文件-->
+    <div class="container mt-3">
+        <form>
+            <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <label class="custom-file-label" for="customFile">选择文件</label>
+                <!--选了文件要用JS把上面的选择文件改成文件名-->
+            </div>
+            <div class="mt-3">
+                <button class="btn upload_btn">提交</button>
+            </div>
+        </form>
     </div>
 
 </body>

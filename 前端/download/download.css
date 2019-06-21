@@ -106,9 +106,19 @@ a:active{
     font-size: 14px;
 }
 
-.courseware > div{
-    width: 25%;
-    margin: 0;
+.courseware > button{
+    background-color: white;
+    margin: 0 10px;
     padding: 0;
     float: left;
+}
+
+.data_upload{
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+.upload_btn{
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
