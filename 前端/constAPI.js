@@ -1,4 +1,4 @@
-const errorResult = {
+var errorResult = {
 	"code": "403",
 	"message": "请求失败",
 	"data": ""
