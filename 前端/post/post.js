@@ -4,10 +4,16 @@ document.write("<script type='text/javascript' src='../constAPI.js'></script>");
 
 function post() {
 
-    let content=$("#_content_id").text();
-    let title=$("#_title_id").text();
-    let type=getSession("type");
+    let content=$("#_content_id").val();
+    let title=$("#_title_id").val();
+    // let type=getSession("type");
+    let type=$("#_type_id").text();
     let userid=getSession("user_id_login");
+
+    alert("type="+type);
+    alert("title="+title);
+    alert("content="+content);
+    alert("userid="+userid);
 
     globalPost("/posts/newPosts",{
         "userid":userid,

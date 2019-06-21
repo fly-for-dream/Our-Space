@@ -83,9 +83,10 @@ $(document).ready(function () {
 
 function exitLogin() {
 	alert("已退出！！");
-	removeSession("isLogin");
-	removeSession("user_name_login");
-	removeSession("user_id_login");
+	// removeSession("isLogin");
+	// removeSession("user_name_login");
+	// removeSession("user_id_login");
+	clearSession();
 	$("#islogin1").attr("hidden","hidden");
 	$("#islogin2").attr("hidden","hidden");
 	$("#notlogin1").removeAttr("hidden");

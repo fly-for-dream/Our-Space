@@ -46,7 +46,7 @@ function addTap(data,name) {
   var list = [];
   for (let i=0; i<data.length; i++) {
       var a = data[i];
-      console.log(a)
+      console.log(a);
       var str = "<div class='container'>\
             <div class='card'>\
                 <div class='card-header'>"+a["title"]+"</div>\

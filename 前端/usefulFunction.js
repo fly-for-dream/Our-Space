@@ -155,3 +155,8 @@ function removeSession(name) {
     $.session.remove(name);
 }
 
+function clearSession() {
+    $.session.clear();
+}
+
+

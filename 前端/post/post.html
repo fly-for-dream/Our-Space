@@ -10,6 +10,7 @@
     <script src="../cssjs/popper.min.js"></script>
     <script src="../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="post.css">
+    <script src="post.js"></script>
 <!--    <script src="_HTML_post.js"></script>-->
 </head>
     <body>
@@ -56,7 +57,7 @@
 
     <!--标签 返回栏-->
     <div class="post_lable">
-        <div class="left_lable"><p>HTML</p></div>
+        <div class="left_lable"><p id="_type_id">HTML</p></div>
         <div class="right_lable"><a href="../分类/_HTML/_HTML.html">返回</a></div>
     </div>
 
@@ -76,7 +77,7 @@
 
     <!--发表帖子按钮-->
     <div class="submit_button">
-        <button type="button" class="btn btn-outline-success">发表帖子</button>
+        <button type="button" class="btn btn-outline-success" onclick="post()">发表帖子</button>
     </div>
 
     </body>
