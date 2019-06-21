@@ -101,7 +101,7 @@ a:active{
     margin-bottom: 10px;
 }
 
-.return{
+.return,.revise{
     width: 80px;
     height: 30px;
     background-color: #99CC99;
@@ -110,9 +110,10 @@ a:active{
     text-align: center;
     font-size: 16px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
-.return> a{
+.return> a,.revise> a{
     color: green;
     text-align: center;
     font-size: 16px;
@@ -240,7 +241,7 @@ a:active{
     margin-left: -5px;
 }
 
-.btn-outline-success,.page1,.page2{
+.btn-outline-success,.page1,.page2,.delete{
     margin-top: 10px;
     border-color: #999999;
 }
@@ -259,7 +260,16 @@ a:active{
     float: left;
 }
 
+.delete{
+    float: left;
+    margin-left: 40%;
+}
+
 .page2{
     float: right;
+}
+
+.delete_reply{
+    margin-left: 30%;
 }
 

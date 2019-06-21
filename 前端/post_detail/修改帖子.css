@@ -1,0 +1,161 @@
+
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/***********标签栏***********/
+/****************************/
+
+.post_lable{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+}
+
+.left_lable{
+    width: 60px;
+    height: 35px;
+    float: left;
+    background-color: #99CC99;
+}
+
+.left_lable> p{
+    padding-top: 3px;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+}
+
+.right_lable{
+    width: 60px;
+    height: 35px;
+    float: right;
+    background-color: #99CC99;
+}
+
+.right_lable> a{
+    padding-top: 3px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+}
+
+/****************************/
+/***********标题*************/
+/****************************/
+.input_text{
+    width: 90%;
+    margin: 10px auto;
+}
+
+/****************************/
+/***********输入框***********/
+/****************************/
+
+.textarea_text{
+    width: 90%;
+    margin: auto;
+}
+
+
+/****************************/
+/***********发表*************/
+/****************************/
+
+.submit_button{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.btn{
+    background-color: #99CC99;
+}
+
+.btn-outline-success{
+    color: green;
+    border-color: #99CC99;
+}
+
+

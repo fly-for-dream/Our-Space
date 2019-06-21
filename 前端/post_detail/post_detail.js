@@ -27,17 +27,30 @@ function show_Tiezi(e) {
 
 function get_reply_tiezi_Html(e) {
 
+    // return '<div class="reply">\
+    //         <div class="replier">\
+    //           <div class="post_img"><img src='+ globalHost+"/index/getImage?id="+e["user"] +' alt="头像"></div>\
+    //           <div class="post_name">' +e["name"]+ '</div>\
+    //         </div>\
+    //         <div class="reply_content">\
+    //           <div class="post_time">'+ e["updatetime"] +'</div>\
+    //           <div class="cut_off"><img src="../index/images_index/u678.png" alt="分割线"></div>\
+    //           <div class="content">'+ e["info"] + '</div>\
+    //         </div>\
+    //     </div>';
     return '<div class="reply">\
-            <div class="replier">\
-              <div class="post_img"><img src='+ globalHost+"/index/getImage?id="+e["user"] +' alt="头像"></div>\
-              <div class="post_name">' +e["name"]+ '</div>\
-            </div>\
-            <div class="reply_content">\
-              <div class="post_time">'+ e["updatetime"] +'</div>\
-              <div class="cut_off"><img src="../index/images_index/u678.png" alt="分割线"></div>\
-              <div class="content">'+ e["info"] + '</div>\
-            </div>\
-        </div>';
+                <div class="replier">\
+                  <div class="post_img"><img src='+ globalHost+"/index/getImage?id="+e["user"] +' alt="头像"></div>\
+                 <div class="post_name">\' +e["name"]+ \'</div>\
+                </div>\
+                <div class="reply_content">\
+                  <div class="post_time">\'+ e["updatetime"] +\'\
+                    <button type="button" class="btn btn-outline-success delete_reply">删除</button>\
+                  </div>\
+                  <div class="cut_off"><img src="../index/images_index/u678.png" alt="分割线"></div>\
+                  <div class="content">\'+ e["info"] + \'</div>\
+                </div>\
+              </div>'
 }
 
 function change(s,x) {
