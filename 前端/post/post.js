@@ -15,8 +15,22 @@ function post() {
     // alert("content="+content);
     alert("userid="+userid);
 
+    // globalPost("/posts/newPosts",{
+    //     "userid":userid,
+    //     "type":type,
+    //     "title":title,
+    //     "info":content,
+    //     "authority":0
+    // },function (d) {
+    //     if (d["code"]===200) {
+    //         alert("发帖成功!!");
+    //         return;
+    //     } else alert("发帖失败!!");
+    // });
+
+
     globalPost("/posts/newPosts",{
-        "userid":userid,
+        "userid":15586219479869,
         "type":type,
         "title":title,
         "info":content,
@@ -26,7 +40,7 @@ function post() {
             alert("发帖成功!!");
             return;
         } else alert("发帖失败!!");
-    })
+    });
 
 }
 

@@ -108,9 +108,12 @@ function add_reply_page(no) {
 
 function Reply_Tiezi(){
     let postsid=get_tie_id();
-    let user=user_id_login;
-    let info=$("#_reply_content").text();
-    globalPost("/posts/replyPosts",{"postsid":postsid, "user":user, "info":info}, function (d) {
+    let user=getSession("user_id_login");;
+    let info=$("#_reply_content").val();
+    alert(postsid);
+    alert(user);
+    alert(info);
+    globalPost("/posts/replyPosts",{"postsid":postsid, "user":user, "info":info, "top":0}, function (d) {
         alert(d["message"]);
         if (d["code"]===200) $("#_reply_content").text("");
     })
@@ -152,8 +155,8 @@ $(document).ready(function () {
     $("#_reply_user_img").attr("src",globalHost+"/user/getImage?id="+user_id_login);
     $("#_reply_user_img").css("width","100%");
     $("#_reply_user_img").css("height","20vh");
-    alert(user_name_login);
-    alert(user_id_login);
-    alert(globalHost+"/index/getImage?id="+user_id_login);
+    // alert(user_name_login);
+    // alert(user_id_login);
+    // alert(globalHost+"/index/getImage?id="+user_id_login);
 
 });
