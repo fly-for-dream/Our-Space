@@ -7,21 +7,21 @@ var page_url;
 var pae_cnt;
 
 
-function getUserName() {
+function getUserName(id) {
     let t;
-    globalPost("/user/getUserInfo",{"id":getSession("user_id_login")},function (d) {
+    globalPost("/user/getUserInfo",{"id":id},function (d) {
         if (d["code"]===200) t=d["code"]["name"]; else t="name";
     });
     return t;
 }
 
 function creat_Tiezi(e) {
-    e["name"]=getUserName();
+    e["name"]=getUserName(e["userid"]);
     return e;
 }
 
 function creat_reply_Tiezi(e) {
-    e["name"]=getUserName();
+    e["name"]=getUserName(e["user"]);
     return e;
 }
 
@@ -29,9 +29,11 @@ function show_Tiezi(e) {
     $("#_time_id").text(e["updatetime"]);
     $("#_title_id").text(e["title"]);
     $("#_type_id").text(e["type"]);
-    $("#_img_id").attr("src",globalHost+"/index/getImage?id="+e["userid"]);
+    $("#_img_id").attr("src",globalHost+"/user/getImage?id="+e["userid"]);
     $("#_content_id").text(e["info"]);
     $("#_name_id").text(e["name"]);
+    $("#_img_id").css("width","100%");
+    $("#_img_id").css("height","20vh");
 }
 
 function get_reply_tiezi_Html(e) {
@@ -49,15 +51,15 @@ function get_reply_tiezi_Html(e) {
     //     </div>';
     return '<div class="reply">\
                 <div class="replier">\
-                  <div class="post_img"><img src='+ globalHost+"/index/getImage?id="+e["user"] +' alt="头像"></div>\
-                 <div class="post_name">\' +e["name"]+ \'</div>\
+                  <div class="post_img"><img src='+ globalHost+"/user/getImage?id="+e["user"] +' alt="头像"></div>\
+                 <div class="post_name">' +e["name"]+ '</div>\
                 </div>\
                 <div class="reply_content">\
-                  <div class="post_time">\'+ e["updatetime"] +\'\
+                  <div class="post_time">'+ e["updatetime"] +'\
                     <button type="button" class="btn btn-outline-success delete_reply">删除</button>\
                   </div>\
                   <div class="cut_off"><img src="../index/images_index/u678.png" alt="分割线"></div>\
-                  <div class="content">\'+ e["info"] + \'</div>\
+                  <div class="content">'+ e["info"] + '</div>\
                 </div>\
               </div>'
 }
@@ -148,6 +150,8 @@ $(document).ready(function () {
     let user_id_login=getSession("user_id_login");
     $("#_reply_user_name").text(user_name_login);
     $("#_reply_user_img").attr("src",globalHost+"/user/getImage?id="+user_id_login);
+    $("#_reply_user_img").css("width","100%");
+    $("#_reply_user_img").css("height","20vh");
     alert(user_name_login);
     alert(user_id_login);
     alert(globalHost+"/index/getImage?id="+user_id_login);
