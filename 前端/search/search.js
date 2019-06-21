@@ -11,7 +11,7 @@ var page_cnt;
 function addHotElement(data) {
     // document.writeln(data.length);
     for (let i=0; i<data.length; ++i)
-        $("#_search_tie_zi").append(get_HotElement_B(data[i]));
+        $("#_search_tie_zi").prepend(get_HotElement_B(data[i]));
 }
 
 function showRankName(data) {
