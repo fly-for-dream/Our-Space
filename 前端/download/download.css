@@ -117,3 +117,8 @@ a:active{
     margin-top: 10px;
     margin-left: 40%;
 }
+
+.upload_btn{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
