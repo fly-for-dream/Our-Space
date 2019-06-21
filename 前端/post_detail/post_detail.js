@@ -129,7 +129,7 @@ function dele_tiezi() {
         let e=d["data"];
         if (e) {
             alert("删除成功!!");
-            window.location.reload();
+            window.location.href="../index/index.html";
         } else {
             alert("删除失败!!");
         }
@@ -146,22 +146,27 @@ $(document).ready(function () {
         let e=creat_Tiezi(d["data"]);
         // console.log(e);
         show_Tiezi(e);
+
+
+        // for (let i=1; i<=page_cnt; i++) add_reply_page(i);
+
+        add_reply_page(get_tie_page());
+
+        let user_name_login=getSession("user_name_login");
+        let user_id_login=getSession("user_id_login");
+        $("#_reply_user_name").text(user_name_login);
+        $("#_reply_user_img").attr("src",globalHost+"/user/getImage?id="+user_id_login);
+        $("#_reply_user_img").css("width","100%");
+        $("#_reply_user_img").css("height","20vh");
+        // alert(user_name_login);
+        // alert(user_id_login);
+        // alert(globalHost+"/index/getImage?id="+user_id_login);
+
+        alert(the_post_user_id);
+        alert(user_id_login);
+        if (the_post_user_id!==user_id_login) $("#btn3").attr("hidden","hidden");
     });
 
-    // for (let i=1; i<=page_cnt; i++) add_reply_page(i);
 
-    add_reply_page(get_tie_page());
-
-    let user_name_login=getSession("user_name_login");
-    let user_id_login=getSession("user_id_login");
-    $("#_reply_user_name").text(user_name_login);
-    $("#_reply_user_img").attr("src",globalHost+"/user/getImage?id="+user_id_login);
-    $("#_reply_user_img").css("width","100%");
-    $("#_reply_user_img").css("height","20vh");
-    // alert(user_name_login);
-    // alert(user_id_login);
-    // alert(globalHost+"/index/getImage?id="+user_id_login);
-
-    if (the_post_user_id!==user_id_login) $("#btn3").attr("hidden","hidden");
 
 });
