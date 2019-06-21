@@ -20,7 +20,7 @@ function try_to_login() {
 
     globalPost("/login/login",{"name":name, "pwd": s},function (d) {
 
-        console.log(d);
+        // document.writeln(d["code"]);
 
         if (d["code"]===200) {
             alert("登录成功!!!");
