@@ -3,7 +3,6 @@ document.write("<script type='text/javascript' src='../dataExamples.js'></script
 document.write("<script type='text/javascript' src='../constAPI.js'></script>");
 
 
-var pagenum=1;
 var page_url;
 var page_cnt;
 
@@ -40,18 +39,25 @@ function get_tie_page() {
 }
 
 function go_next() {
-    pagenum=parseInt(get_url_parameter("page"));
+    let pagenum=parseInt(get_url_parameter("page"));
+    // alert("old"+pagenum);
+    let search_word=getSession("search_word");
     // if (pagenum<page_cnt) pagenum++; else alert("这已经是最后一页了！！！");
-    globalGet("/posts/getSearch",{"value":search_word, "pageNum":pagenum},function (d) {
-        if (d["code"] !== 200) {
-            if (d["data"].length!==0) pagenum++; else alert("这已经是最后一页了！！！");
+    globalGet("/posts/getSearch",{"value":search_word, "pageNum":pagenum.toString()},function (d) {
+        if (d["code"] === 200) {
+            // alert("len"+d["data"].length);
+            if (d["data"].length>0) {
+                pagenum++;
+                // alert("233");
+            }else alert("这已经是最后一页了！！！");
         }
+        // alert("pagenum"+pagenum);
+        window.location.href=change(page_url, pagenum);
     });
-    window.location.href=change(page_url, pagenum);
 }
 
 function go_prec() {
-    pagenum=parseInt(get_url_parameter("page"));
+    let pagenum=parseInt(get_url_parameter("page"));
     if (pagenum>1) pagenum--; else alert("这已经是第一页了！！！");
     window.location.href=change(page_url, pagenum);
 }
@@ -75,8 +81,8 @@ $(document).ready(function () {
 
     $("#_current_page_id").text("当前页码："+(now_page+1));
 
-    alert(now_page);
-    alert(search_word);
+    // alert("now_page="+now_page);
+    // alert(search_word);
 
 
     globalGet("/posts/getSearch",{"value":search_word, "pageNum":now_page},function (d) {
@@ -87,7 +93,7 @@ $(document).ready(function () {
         const tmp=d["data"];
         page_cnt=Math.ceil((tmp.length)/15);
         // document.writeln(tmp.length);
-        alert(tmp.length);
+        // alert(tmp.length);
         const data=[];
         for (let i=0; i<tmp.length; i++) {
             const b=tmp[i];
