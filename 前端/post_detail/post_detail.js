@@ -191,7 +191,7 @@ function update_tiezi() {
     setSession("tmp_url",window.location.href);
 
     let ss="修改帖子.html";
-    window.location.href=ss+"?type="+$("#_type_id").text().toLowerCase();
+    window.location.href=ss+"?id="+get_url_parameter("id")+"&type="+$("#_type_id").text().toLowerCase();
 }
 
 
