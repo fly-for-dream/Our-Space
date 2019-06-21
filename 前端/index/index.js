@@ -73,7 +73,7 @@ $(document).ready(function () {
 	$("#notlogin1").attr("hidden","hidden");
 	$("#notlogin2").attr("hidden","hidden");
 	$("#islogin1").removeAttr("hidden");
-	$("#islogin2").remove("hidden");
+	$("#islogin2").removeAttr("hidden");
 
 
 
