@@ -248,6 +248,13 @@ a:active{
     float: left;
 }
 
+.current_page{
+    color: lightgray;
+    margin-top: 7px;
+    margin-left: 25%;
+    float: left;
+}
+
 .page2{
     float: right;
 }
