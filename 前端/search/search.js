@@ -54,26 +54,33 @@ function go_prec() {
 $(document).ready(function () {
 
     page_cnt=1;
+    page_url=window.location.href.toString();
 
     globalGet("/index/getRank",null,function (d){
         showRankName(d["data"]);
     });
 
-    let search_word=getSession("search_word").toString();
+    let search_word=getSession("search_word");
     // document.writeln(search_word);
-    removeSession("search_word");
+    // removeSession("search_word");
     // document.writeln(get_url_parameter("page"));
     // document.writeln(search_word);
 
     let now_page=parseInt(get_url_parameter("page"))-1;
+
+    $("#_current_page_id").text("当前页码："+(now_page+1));
+
     alert(now_page);
     alert(search_word);
+
+
     globalGet("/posts/getSearch",{"value":search_word, "pageNum":now_page},function (d) {
         if (d["code"]!==200) {
             alert("搜索结果为空！");
             return;
         }
         const tmp=d["data"];
+        page_cnt=Math.ceil((tmp.length)/15);
         // document.writeln(tmp.length);
         alert(tmp.length);
         const data=[];
