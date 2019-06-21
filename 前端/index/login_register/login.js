@@ -34,7 +34,7 @@ function try_to_login() {
         //     return;
         // }
         // setSession("user_name_login",name);
-        // setSession("user_id_login",d["data"]["userid"]);
+        // setSession("user_id_login",d["data"]);
         // setSession("isLogin",1);
         //
         // globalGet("/login/isAdmin",{"name":name}, function (d) {
