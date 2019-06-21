@@ -7,14 +7,18 @@ function return_homepage() {
 }
 
 function Register() {
-    let name=$("#_user_name_id").text();
+    let name=$("#_user_name_id").val();
+    let s=$("#_mima_id").val();
+    let s2=$("#_mima_id2").val();
+    // document.writeln(s);
+    // document.writeln(s2);
+    // document.writeln(name);
+
     if (name==="") {
         alert("用户名不能为空!!");
         return;
     }
 
-    let s=$("#_mima_id").text();
-    let s2=$("#_mima_id2").text();
     if (s !==s2 ) {
         alert("两次密码不匹配！请重新输入！");
         return;

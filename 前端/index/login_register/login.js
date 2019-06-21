@@ -7,13 +7,16 @@ function return_homepage() {
 }
 
 function try_to_login() {
-    let name=$("#_user_name_id").text();
+    let name=$("#_user_name_id").val();
+    let s=$("#_mima_id").val();
+
+    // document.writeln(s);
+    // document.writeln(name);
+
     if (name==="") {
         alert("用户名不能为空!!");
         return;
     }
-
-    let s=$("#_mima_id").text();
 
     globalPost("/login/login",{"name":name, "pwd": s},function (d) {
         if (d["code"]===200) {

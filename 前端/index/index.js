@@ -70,8 +70,8 @@ $(document).ready(function () {
 	let isLogin=getSession("isLogin");
 	if (isLogin===null) isLogin=0;
 	if (!isLogin) return;
-	$("#notlogin1").hidden="hidden";
-	$("#notlogin2").hidden="hidden";
+	$("#notlogin1").attr("hidden","hidden");
+	$("#notlogin2").attr("hidden","hidden");
 	$("#islogin1").removeAttr("hidden");
 	$("#islogin2").remove("hidden");
 
