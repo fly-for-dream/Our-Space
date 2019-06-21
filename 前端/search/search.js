@@ -67,8 +67,13 @@ $(document).ready(function () {
     // document.writeln(search_word);
 
     let now_page=parseInt(get_url_parameter("page"))-1;
+
+    $("#_current_page_id").text("当前页码："+(now_page+1));
+
     alert(now_page);
     alert(search_word);
+
+
     globalGet("/posts/getSearch",{"value":search_word, "pageNum":now_page},function (d) {
         if (d["code"]!==200) {
             alert("搜索结果为空！");
