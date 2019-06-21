@@ -249,9 +249,9 @@ a:active{
 }
 
 .current_page{
-    color: lightgray;
+    color: gray;
     margin-top: 7px;
-    margin-left: 25%;
+    margin-left: 32%;
     float: left;
 }
 
