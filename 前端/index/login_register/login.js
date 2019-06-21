@@ -26,6 +26,14 @@ function try_to_login() {
         setSession("user_id_login",d["data"]["userid"]);
         setSession("isLogin",1);
 
+        globalGet("/login/isAdmin",{"name":name}, function (d) {
+            if (d["code"]===200 && d["data"]) setSession("isAdmin",1); else setSession("isAdmin",0);
+        });
+
+        globalGet("/login/isTeacher",{"name":name}, function (d) {
+            if (d["code"]===200 && d["data"]) setSession("isTeacher",1); else setSession("isTeacher",0);
+        });
+
         return_homepage();
     })
 }
