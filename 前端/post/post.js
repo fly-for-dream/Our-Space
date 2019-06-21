@@ -7,12 +7,12 @@ function post() {
     let content=$("#_content_id").val();
     let title=$("#_title_id").val();
     // let type=getSession("type");
-    let type=$("#_type_id").text();
+    let type=$("#_type_id").text().toLowerCase();
     let userid=getSession("user_id_login");
 
     alert("type="+type);
-    alert("title="+title);
-    alert("content="+content);
+    // alert("title="+title);
+    // alert("content="+content);
     alert("userid="+userid);
 
     globalPost("/posts/newPosts",{
