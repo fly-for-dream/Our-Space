@@ -9,9 +9,12 @@
     <script src="../../cssjs/popper.min.js"></script>
     <script src="../../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="issue_task.css">
+    <script type="text/javascript" src="../../constAPI.js"></script>
+    <script type="text/javascript" src="../../usefulFunction.js"></script>
+
     <script src="issue_task.js"></script>
 </head>
-    <body>
+<body>
     <!--导航栏navbar-->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container">
@@ -60,7 +63,7 @@
 
     <!--标题栏-->
     <div class="input_text">
-        <input type="text" class="form-control" placeholder="标题">
+        <input id="titletext" type="text" class="form-control" placeholder="标题">
     </div>
 
     <!--输入框-->
@@ -69,13 +72,13 @@
         <div>
 
         </div>
-        <textarea class="form-control" rows="5"></textarea>
+        <textarea id="inputtext" class="form-control" rows="5"></textarea>
     </div>
 
     <!--发布按钮-->
     <div class="submit_button">
-        <button type="button" class="btn btn-outline-success">提交任务</button>
+        <button onclick="setTask()" type="button" class="btn btn-outline-success">提交任务</button>
     </div>
 
-    </body>
+</body>
 </html>
