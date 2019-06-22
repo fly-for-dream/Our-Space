@@ -4,17 +4,17 @@ document.write("<script type='text/javascript' src='../../constAPI.js'></script>
 
 function addNewPostElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#newpost").append(get_HotElement_B(data[i]));
+        $("#newpost").append(get_HotElement_C(data[i]));
 }
 
 function addQuestionAnswerElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#question_answer").append(get_HotElement_B(data[i]));
+        $("#question_answer").append(get_HotElement_C(data[i]));
 }
 
 function addEssenceElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#essence").append(get_HotElement_B(data[i]));
+        $("#essence").append(get_HotElement_C(data[i]));
 }
 
 function showRankName(data) {
@@ -77,7 +77,8 @@ $(document).ready(function () {
                     "type": b["type"],
                     "time": b["updatetime"],
                     "read_num": b["readnum"],
-                    "remark_num": b["number"]
+                    "remark_num": b["number"],
+                    "id_num":b["id"]
                 };
                 data.push(e);
             }
