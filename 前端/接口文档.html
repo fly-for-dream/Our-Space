@@ -451,6 +451,12 @@ pre code{
 
                             <ul class="nav list-group">
                                 <li>
+                                        <a href="#1e65b91aa85b4652988df97bc8a7c152">根据用户的id获取班级信息</a>
+                                    </li><li>
+                                        <a href="#a9d5250f66db45068ad7625a6122d22b">获取班级任务列表</a>
+                                    </li><li>
+                                        <a href="#26c90663325c49f19a2459fb51203960">新增班级任务</a>
+                                    </li><li>
                                         <a href="#7620ecc930624c5dae7494be6300332f">删除班级内学生</a>
                                     </li><li>
                                         <a href="#d91627c394374a17ac7e4b2559ee0654">添加学生</a>
@@ -2012,7 +2018,29 @@ pre code{
 
                             
                             
-                            
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "查找成功",
+    "data": [
+        {
+            "id": "15611409244117",
+            "classid": "15611388183568",
+            "name": "班级任务1",
+            "info": "完成软件工程实践",
+            "type": "0",
+            "endtime": "2019-06-14T16:00:00.000 0000",
+            "operator": "15610996629011",
+            "createtime": "2019-06-21T18:15:24.000 0000",
+            "updatetime": "2019-06-21T18:15:24.000 0000",
+            "remark": null
+        }
+    ]
+}</code>
+                            </pre>
+                                </div>
                             
                         </div><div class="api-one">
                             <h3 id="455fcc433596405f89b802369795a626">删除任务</h3>
@@ -2086,49 +2114,49 @@ pre code{
                                    href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=f3db209aae8749bb92dcf3e43112c751"
                                    class="label label-warning">在线浏览</a>
                             </p>
-                            <p>请求方式：GET</p>
+                            <p>请求方式：POST</p>
                             <p>
                                 请求地址：http://{{host}}/task/myTask                            </p>
 
                             
-                            <table class="table table-hover">
-                                    <colgroup>
-                                        <col class="col-xs-2">
-                                        <col class="col-xs-1">
-                                        <col class="col-xs-1">
-                                        <col class="col-xs-7">
-                                        <col class="col-xs-2">
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th><span class="label label-success">Query参数名</span></th>
-                                        <th>类型</th>
-                                        <th>必需</th>
-                                        <th>描述</th>
-                                        <th>示例 e.g.</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                            <td>user</td>
-                                            <td>string</td>
-                                            <td>
-                                                是
-                                                                                                </td>
-                                            <td></td>
-                                            <td>15610904718291</td>
-                                        </tr><tr>
-                                            <td>pageNumber</td>
-                                            <td>string</td>
-                                            <td>
-                                                是
-                                                                                                </td>
-                                            <td></td>
-                                            <td>15</td>
-                                        </tr>                                    </tbody>
-                                </table>
-
                             
+
+                                                                <table class="table table-hover">
+                                            <colgroup>
+                                                <col class="col-xs-2">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-7">
+                                                <col class="col-xs-2">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><span class="label label-success">Body参数名</span></th>
+                                                <th>类型</th>
+                                                <th>必需</th>
+                                                <th>描述</th>
+                                                <th>示例 e.g.</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                    <td>user</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td></td>
+                                                    <td>1</td>
+                                                </tr><tr>
+                                                    <td>pageNumber</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td></td>
+                                                    <td>15</td>
+                                                </tr>                                            </tbody>
+                                        </table>
                             <p>详细说明：</p>
                                 <p>
                                 <div class="detail-info">
@@ -2143,31 +2171,143 @@ pre code{
     "message": "查找成功",
     "data": [
         {
-            "id": "2",
+            "id": "15611370695199",
             "user": "15586219479869",
-            "type": "2",
-            "title": "2",
-            "status": "2",
-            "money": 2,
-            "info": "2",
-            "endtime": "2019-06-21T14:34:06.000 0000",
-            "operator": "1",
-            "creattime": "2019-06-21T14:34:10.000 0000",
-            "updatetime": "2019-06-20T14:34:13.000 0000",
-            "remark": "1"
-        },
-        {
-            "id": "15610904718291",
-            "user": "15586219479869",
-            "type": "1",
-            "title": "1",
+            "type": "4",
+            "title": "这是一个测试任务",
             "status": "1",
             "money": 1,
-            "info": "1",
-            "endtime": "2019-06-22T13:38:13.000 0000",
-            "operator": "1",
-            "creattime": "2019-06-21T04:14:32.000 0000",
-            "updatetime": "2019-06-21T04:14:32.000 0000",
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:10.000 0000",
+            "updatetime": "2019-06-21T17:11:10.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370699128",
+            "user": "15586219479869",
+            "type": "4",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:10.000 0000",
+            "updatetime": "2019-06-21T17:11:10.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370691176",
+            "user": "15586219479869",
+            "type": "4",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:09.000 0000",
+            "updatetime": "2019-06-21T17:11:09.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370645328",
+            "user": "15586219479869",
+            "type": "3",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:05.000 0000",
+            "updatetime": "2019-06-21T17:11:05.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370635075",
+            "user": "15586219479869",
+            "type": "3",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:04.000 0000",
+            "updatetime": "2019-06-21T17:11:04.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370639997",
+            "user": "15586219479869",
+            "type": "3",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:04.000 0000",
+            "updatetime": "2019-06-21T17:11:04.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370598804",
+            "user": "15586219479869",
+            "type": "2",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:00.000 0000",
+            "updatetime": "2019-06-21T17:11:00.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370604626",
+            "user": "15586219479869",
+            "type": "2",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:11:00.000 0000",
+            "updatetime": "2019-06-21T17:11:00.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370593394",
+            "user": "15586219479869",
+            "type": "2",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:10:59.000 0000",
+            "updatetime": "2019-06-21T17:10:59.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611370565354",
+            "user": "15586219479869",
+            "type": "2",
+            "title": "这是一个测试任务",
+            "status": "1",
+            "money": 1,
+            "info": "这是一个发布的任务",
+            "endtime": "2019-06-21T16:00:00.000 0000",
+            "operator": "15586219479869",
+            "creattime": "2019-06-21T17:10:57.000 0000",
+            "updatetime": "2019-06-21T17:10:57.000 0000",
             "remark": null
         }
     ]
@@ -2187,7 +2327,7 @@ pre code{
                             </p>
                             <p>请求方式：POST</p>
                             <p>
-                                请求地址：http://{{host}}/task/underTakeTask                            </p>
+                                请求地址：http://{{host}}/task/undertakeTask                            </p>
 
                             
                             <table class="table table-hover">
@@ -2241,13 +2381,13 @@ pre code{
     "code": 200,
     "message": "任务接取成功",
     "data": {
-        "id": "15610999272042",
+        "id": "15611372118506",
         "user": "15586219479869",
-        "taskid": "1",
+        "taskid": "15611370604626",
         "status": "0",
         "operator": "15586219479869",
-        "creattime": "2019-06-21",
-        "updatetime": "2019-06-21",
+        "creattime": "2019-06-22",
+        "updatetime": "2019-06-22",
         "remark": null
     }
 }</code>
@@ -2290,14 +2430,6 @@ pre code{
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                    <td>id</td>
-                                                    <td>string</td>
-                                                    <td>
-                                                        是
-                                                                                                                </td>
-                                                    <td></td>
-                                                    <td>2</td>
-                                                </tr><tr>
                                                     <td>user</td>
                                                     <td>string</td>
                                                     <td>
@@ -2353,14 +2485,6 @@ pre code{
                                                                                                                 </td>
                                                     <td></td>
                                                     <td>2019-06-22 21:38:13</td>
-                                                </tr><tr>
-                                                    <td>operator</td>
-                                                    <td>string</td>
-                                                    <td>
-                                                        是
-                                                                                                                </td>
-                                                    <td></td>
-                                                    <td>1</td>
                                                 </tr>                                            </tbody>
                                         </table>
                             <p>详细说明：</p>
@@ -2470,6 +2594,298 @@ pre code{
                         </div><h1>班级接口</h1>
                     
                     <div class="api-one">
+                            <h3 id="1e65b91aa85b4652988df97bc8a7c152">根据用户的id获取班级信息</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=1e65b91aa85b4652988df97bc8a7c152"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=1e65b91aa85b4652988df97bc8a7c152"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：POST</p>
+                            <p>
+                                请求地址：http://{{host}}/class/getClassInfoByUser                            </p>
+
+                            
+                            
+
+                                                                <table class="table table-hover">
+                                            <colgroup>
+                                                <col class="col-xs-2">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-7">
+                                                <col class="col-xs-2">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><span class="label label-success">Body参数名</span></th>
+                                                <th>类型</th>
+                                                <th>必需</th>
+                                                <th>描述</th>
+                                                <th>示例 e.g.</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                    <td>userid</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>用户id</td>
+                                                    <td>15586219479869</td>
+                                                </tr>                                            </tbody>
+                                        </table>
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>根据用户id返回班级信息</p><p>201：无此学生</p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "获取成功",
+    "data": {
+        "id": "15611388183568",
+        "teacher": "15610996629011",
+        "type": "1",
+        "info": "软件工程2班",
+        "operator": "15610996629011",
+        "creattime": "2019-06-22T01:43:54.000 0000",
+        "updatetime": "2019-06-22T01:43:56.000 0000",
+        "remark": null
+    }
+}</code>
+                            </pre>
+                                </div>
+                            
+                        </div><div class="api-one">
+                            <h3 id="a9d5250f66db45068ad7625a6122d22b">获取班级任务列表</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=a9d5250f66db45068ad7625a6122d22b"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=a9d5250f66db45068ad7625a6122d22b"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：GET</p>
+                            <p>
+                                请求地址：http://{{host}}/class/getClassTask                            </p>
+
+                            
+                            <table class="table table-hover">
+                                    <colgroup>
+                                        <col class="col-xs-2">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-1">
+                                        <col class="col-xs-7">
+                                        <col class="col-xs-2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th><span class="label label-success">Query参数名</span></th>
+                                        <th>类型</th>
+                                        <th>必需</th>
+                                        <th>描述</th>
+                                        <th>示例 e.g.</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>classid</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>班级id</td>
+                                            <td>15611388183568</td>
+                                        </tr><tr>
+                                            <td>pageNumber</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>页码</td>
+                                            <td>0</td>
+                                        </tr><tr>
+                                            <td>type</td>
+                                            <td>string</td>
+                                            <td>
+                                                是
+                                                                                                </td>
+                                            <td>填0</td>
+                                            <td>0</td>
+                                        </tr>                                    </tbody>
+                                </table>
+
+                            
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>获取班级任务列表</p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "查找成功",
+    "data": [
+        {
+            "id": "15611774166884",//任务id
+            "classid": "15611388183568",//班级id
+            "name": "班级任务1234",//任务名字
+            "info": "完成软件工程实践",//任务信息
+            "type": "0",
+            "endtime": "2019-06-14T16:00:00.000 0000",//截至时间
+            "operator": "15610996629011",
+            "createtime": "2019-06-22T04:23:37.000 0000",
+            "updatetime": "2019-06-22T04:23:37.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611774143687",
+            "classid": "15611388183568",
+            "name": "班级任务123",
+            "info": "完成软件工程实践",
+            "type": "0",
+            "endtime": "2019-06-14T16:00:00.000 0000",
+            "operator": "15610996629011",
+            "createtime": "2019-06-22T04:23:34.000 0000",
+            "updatetime": "2019-06-22T04:23:34.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611774122181",
+            "classid": "15611388183568",
+            "name": "班级任务12",
+            "info": "完成软件工程实践",
+            "type": "0",
+            "endtime": "2019-06-14T16:00:00.000 0000",
+            "operator": "15610996629011",
+            "createtime": "2019-06-22T04:23:32.000 0000",
+            "updatetime": "2019-06-22T04:23:32.000 0000",
+            "remark": null
+        },
+        {
+            "id": "15611774077436",
+            "classid": "15611388183568",
+            "name": "班级任务1",
+            "info": "完成软件工程实践",
+            "type": "0",
+            "endtime": "2019-06-14T16:00:00.000 0000",
+            "operator": "15610996629011",
+            "createtime": "2019-06-22T04:23:28.000 0000",
+            "updatetime": "2019-06-22T04:23:28.000 0000",
+            "remark": null
+        }
+    ]
+}</code>
+                            </pre>
+                                </div>
+                            
+                        </div><div class="api-one">
+                            <h3 id="26c90663325c49f19a2459fb51203960">新增班级任务</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=26c90663325c49f19a2459fb51203960"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=26c90663325c49f19a2459fb51203960"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：POST</p>
+                            <p>
+                                请求地址：http://{{host}}/class/setClassTask                            </p>
+
+                            
+                            
+
+                                                                <table class="table table-hover">
+                                            <colgroup>
+                                                <col class="col-xs-2">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-7">
+                                                <col class="col-xs-2">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><span class="label label-success">Body参数名</span></th>
+                                                <th>类型</th>
+                                                <th>必需</th>
+                                                <th>描述</th>
+                                                <th>示例 e.g.</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                    <td>classid</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>classid</td>
+                                                    <td>15611388183568</td>
+                                                </tr><tr>
+                                                    <td>userid</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>userid</td>
+                                                    <td>15610996629011</td>
+                                                </tr><tr>
+                                                    <td>name</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>任务名</td>
+                                                    <td>班级任务1</td>
+                                                </tr><tr>
+                                                    <td>info</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>任务信息</td>
+                                                    <td>完成软件工程实践</td>
+                                                </tr><tr>
+                                                    <td>endtime</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>结束时间</td>
+                                                    <td>2019-06-15 00:00:00</td>
+                                                </tr>                                            </tbody>
+                                        </table>
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>新增班级任务</p><p>与新增任务相似</p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "新增成功",
+    "data": "15611838124808"//任务id
+}</code>
+                            </pre>
+                                </div>
+                            
+                        </div><div class="api-one">
                             <h3 id="7620ecc930624c5dae7494be6300332f">删除班级内学生</h3>
                             <p>
                                 <a target="_blank"
@@ -2510,7 +2926,7 @@ pre code{
                                                     <td>
                                                         是
                                                                                                                 </td>
-                                                    <td></td>
+                                                    <td>学生的userid</td>
                                                     <td>15611049420021</td>
                                                 </tr>                                            </tbody>
                                         </table>
@@ -2671,15 +3087,15 @@ pre code{
                                             <td>
                                                 是
                                                                                                 </td>
-                                            <td></td>
-                                            <td>1</td>
+                                            <td>班级id</td>
+                                            <td>15611388183568</td>
                                         </tr><tr>
                                             <td>pageNumber</td>
                                             <td>string</td>
                                             <td>
                                                 是
                                                                                                 </td>
-                                            <td></td>
+                                            <td>页码</td>
                                             <td>0</td>
                                         </tr>                                    </tbody>
                                 </table>
@@ -2688,7 +3104,7 @@ pre code{
                             <p>详细说明：</p>
                                 <p>
                                 <div class="detail-info">
-                                    <div><p>功能：查找指定班级的所有成员</p><p>返回：list</p><p>状态码：</p><p>201：无此班级</p><p>200：班级成员查找成功</p></div>
+                                    <div><p>功能：查找指定班级的所有成员</p><p>返回：用户信息list，每一个都跟根据用户id返回用户信息的接口返回的数据一样</p><p>状态码：</p><p>201：无此班级</p><p>200：班级成员查找成功</p></div>
                                 </div>
                                 </p>
                             <p>返回示例：</p>
@@ -2699,14 +3115,30 @@ pre code{
     "message": "班级成员查找成功",
     "data": [
         {
-            "id": "1",
-            "classid": "1",
-            "user": "15586219479869",
-            "status": 1,
-            "operator": "1",
-            "creattime": "2019-06-21T15:28:06.000 0000",
-            "updatetime": "2019-06-21T15:28:08.000 0000",
-            "remark": "1"
+            "id": "15586219479869",//userid
+            "customid": "15586219479869",
+            "name": "测试成员1",
+            "sex": 1,//性别，0为女，1为男
+            "birth": "2019-05-22T16:00:00.000 0000",
+            "signature": "我是一个测试的沙狗",//个性签名
+            "city": "北京",//城市
+            "operator": "15586219479869",//记录操作者
+            "creattime": "2019-05-23T22:54:07.000 0000",
+            "updatetime": "2019-05-23T22:54:09.000 0000",
+            "remark": ""
+        },
+        {
+            "id": "15611126327289",
+            "customid": "15611126327289",
+            "name": "654",
+            "sex": 0,
+            "birth": "2019-06-21T10:23:53.000 0000",
+            "signature": "无",
+            "city": "未知",
+            "operator": "000000",
+            "creattime": "2019-06-21T10:23:53.000 0000",
+            "updatetime": "2019-06-21T10:23:53.000 0000",
+            "remark": ""
         }
     ]
 }</code>
@@ -2776,31 +3208,18 @@ pre code{
                                 <div class="highlight">
                             <pre>
                                 <code class="json hljs">{
-
-  "code": 200,
-
-  "message": "班级查找成功",
-
-  "data": {
-
-    "id": "1",
-
-    "teacher": "单红",
-
-    "type": "1",
-
-    "info": "1",
-
-    "operator": "1",
-
-    "creattime": "2019-06-20T21:36:02.000 0000",
-
-    "updatetime": "2019-06-14T21:35:57.000 0000",
-
-    "remark": "3"
-
-  }
-
+    "code": 200,
+    "message": "班级查找成功",
+    "data": {
+        "id": "15611388183568",
+        "teacher": "15610996629011",
+        "type": "1",
+        "info": "软件工程2班",
+        "operator": "15610996629011",
+        "creattime": "2019-06-22T01:43:54.000 0000",
+        "updatetime": "2019-06-22T01:43:56.000 0000",
+        "remark": null
+    }
 }</code>
                             </pre>
                                 </div>
