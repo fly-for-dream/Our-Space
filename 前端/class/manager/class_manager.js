@@ -111,6 +111,10 @@ function show_class_info() {
     get_class_info();
 }
 
+function goto_add() {
+    setSession("tmp_url",window.location.href);
+    window.location.href="../add_stu.html";
+}
 
 $(document).ready(function () {
 

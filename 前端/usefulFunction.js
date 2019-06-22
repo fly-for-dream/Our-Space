@@ -143,20 +143,22 @@ function get_url_parameter(name) {
     return null;
 }
 
-function setSession(name,value) {
-    $.session.set(name,value);
-}
-
-function getSession(name) {
-    return $.session.get(name);
-}
-
 function removeSession(name) {
     $.session.remove(name);
 }
 
 function clearSession() {
     $.session.clear();
+}
+
+function getSession(name) {
+    return $.session.get(name);
+}
+
+function setSession(name,value) {
+    let t=getSession(name);
+    if (t!==undefined) removeSession(name);
+    $.session.set(name,value);
 }
 
 

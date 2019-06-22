@@ -10,6 +10,7 @@
     <script src="../cssjs/popper.min.js"></script>
     <script src="../cssjs/bootstrap.min.js"></script>
     <link rel="stylesheet" href="add_stu.css">
+    <script src="add_stu.js"></script>
 </head>
     <body>
         <!--导航栏navbar-->
@@ -56,7 +57,7 @@
             <form class="add_form">
                 <div class="form-group">
                     <label>姓名:
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="_name_id">
                     </label>
                 </div>
                 <div class="form-group">
@@ -66,17 +67,17 @@
                 </div>
                 <div class="form-group">
                     <label>城市:
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="_city_id">
                     </label>
                 </div>
                 <div class="form-group">
                     <label>个人简介:
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="_intro_id">
                     </label>
                 </div>
             </form>
             <button class="btn add_btn">确认</button>
-            <a class="btn add_return" href="manager/class_manager.html">返回</a>
+            <button class="btn add_return" onclick="return_last()">返回</button>
         </div>
 
 </body>
