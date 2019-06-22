@@ -134,6 +134,12 @@ function show_class_info() {
 }
 
 function goto_add() {
+    let tt=getSession("isTeacher");
+    if (tt===undefined) tt=0;
+    if (!tt) {
+        alert("您不是老师，或者无此权限！！");
+        return;
+    }
     setSession("tmp_url",window.location.href);
     window.location.href="../add_stu.html";
 }
