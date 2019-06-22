@@ -7,6 +7,7 @@ function return_homepage() {
 }
 
 function try_to_login() {
+    let userid;
     let name=$("#_user_name_id").val().trim();
     let s=$("#_mima_id").val().trim();
 
@@ -29,6 +30,7 @@ function try_to_login() {
 
         if (d["code"]===200) {
             alert("登录成功!!!");
+            userid=d["data"];
             setSession("user_name_login",name);
             setSession("user_id_login",d["data"]);
             setSession("isLogin",1);
@@ -46,6 +48,16 @@ function try_to_login() {
 
         globalGet("/login/isTeacher",{"name":name}, function (d) {
             if (d["code"]===200 && d["data"]) setSession("isTeacher",1); else setSession("isTeacher",0);
+        });
+
+        globalPost("/class/getClassInfoByUser",{
+            "userid": userid
+        },function (d) {
+            if (d["code"===200]) {
+                let e=d["data"];
+                let class_id=e["id"];
+                setSession("class_id",class_id);
+            }
         });
 
         return_homepage();
