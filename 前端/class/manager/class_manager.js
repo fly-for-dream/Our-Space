@@ -157,6 +157,7 @@ $(document).ready(function () {
     show_class_info();
 
     let isAdd=getSession("isAdd");
+    alert(isAdd);
     if (isAdd===undefined) isAdd=0;
     if (isAdd===1) {
         removeSession("isAdd");

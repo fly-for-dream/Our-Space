@@ -23,7 +23,9 @@ function add() {
     setSession("city",city)
     setSession("intro",intro);
     setSession("sex",sex);
+    setSession("isAdd",1);
     alert("添加成功");
+    alert(getSession("isAdd"));
     return_last();
 }
 
