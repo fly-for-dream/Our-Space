@@ -4,17 +4,17 @@ document.write("<script type='text/javascript' src='../../constAPI.js'></script>
 
 function addNewPostElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#newpost").append(get_HotElement_B(data[i]));
+        $("#newpost").append(get_HotElement_C(data[i]));
 }
 
 function addQuestionAnswerElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#question_answer").append(get_HotElement_B(data[i]));
+        $("#question_answer").append(get_HotElement_C(data[i]));
 }
 
 function addEssenceElement(data) {
     for (let i=0; i<data.length; ++i)
-        $("#essence").append(get_HotElement_B(data[i]));
+        $("#essence").append(get_HotElement_C(data[i]));
 }
 
 function showRankName(data) {
