@@ -1,0 +1,119 @@
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/***********主体*************/
+/****************************/
+
+.add_width{
+    width: 40%;
+    margin: 20px auto 0;
+}
+
+.add_form{
+    width: 100%;
+    margin: auto;
+}
+
+.add_form> div{
+    width: 100%;
+    margin: auto;
+}
+
+.add_form> div >label{
+    width: 100%;
+    margin: 5px;
+}
+
+.add_form> div >label>input{
+    width: 100%;
+}
+
+.add_btn{
+    float: left;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.add_return{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15%;
+}
+
