@@ -77,7 +77,8 @@ $(document).ready(function () {
                     "type": b["type"],
                     "time": b["updatetime"],
                     "read_num": b["readnum"],
-                    "remark_num": b["number"]
+                    "remark_num": b["number"],
+                    "id_num":b["id"]
                 };
                 data.push(e);
             }
