@@ -17,42 +17,46 @@ function get_stu_item(e) {
 
 
 function dele_stu() {
+    let isTeacher=getSession("isTeacher");
+    if (isTeacher===undefined) isTeacher=0;
+    if (!isTeacher) {
+        alert("您不是老师，或者无此权限！！！");
+        return;
+    }
     let id="";
     globalPost("/class/deleteClassMember",{
         "id":id
     },function (d) {
         if (d["code"]===200) {
             $(this).parent().parent().remove();
+            alert("删除成功!!!");
         }
     });
 }
 
 function show_class_info_content(u) {
-    $("#_t1_id").text(u[""]);
-    $("#_t2_id").text(u[""]);
-    $("#_t3_id").text(u[""]);
-    $("#_t4_id").text(u[""]);
-    $("#_t5_id").text(u[""]);
-    $("#_t6_id").text(u[""]);
+    // $("#_t1_id").text("软件工程");
+    $("#_t2_id").text(u["teacher"]);
+    $("#_t3_id").text(u["info"]);
+    $("#_t4_id").text(u["operator"]);
+    $("#_t5_id").text(u["creattime"]);
+    $("#_t6_id").text(u["updatetime"]);
 }
 
 function get_class_info() {
-    let id="";
-    let pageNumber="";
+    let id=getSession("user_id_login");
 
     globalGet("/class/getClassInfo",{
-        "id":id,
-        "pageNumber":pageNumber
+        "id":id
     },function (d) {
         if (d["code"]===200) {
             let e=d["data"];
             let u={
-                "name":e["name"],
-                "sex":e["sex"],
-                "place":e["place"],
-                "intro":e["intro"],
-                "place":e["place"],
-                "intro":e["intro"]
+                "info":e["info"],
+                "operator":e["operator"],
+                "creattime":e["creattime"],
+                "updatetime":e["updatetime"],
+                "teacher":e["teacher"]
             };
             show_class_info_content(u);
         }
@@ -62,8 +66,8 @@ function get_class_info() {
 
 
 function get_stu_list() {
-    let id2="";
-    let pageNumber2="";
+    let id2=getSession("class_id");
+    let pageNumber2=0;
     globalGet("/class/getStudentList",{
         "id":id2,
         "pageNumber":pageNumber2
@@ -77,8 +81,8 @@ function get_stu_list() {
                 let tt={
                     "name":u["name"],
                     "sex":sex,
-                    "city":u["place"],
-                    "intro":u["intro"]
+                    "city":u["city"],
+                    "intro":u["signature"]
                 };
                 $("#_tbody_id").append(get_stu_item(tt));
             }
