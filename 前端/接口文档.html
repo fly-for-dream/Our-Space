@@ -451,6 +451,8 @@ pre code{
 
                             <ul class="nav list-group">
                                 <li>
+                                        <a href="#1e65b91aa85b4652988df97bc8a7c152">根据用户的id获取班级信息</a>
+                                    </li><li>
                                         <a href="#a9d5250f66db45068ad7625a6122d22b">获取班级任务列表</a>
                                     </li><li>
                                         <a href="#26c90663325c49f19a2459fb51203960">新增班级任务</a>
@@ -2592,6 +2594,77 @@ pre code{
                         </div><h1>班级接口</h1>
                     
                     <div class="api-one">
+                            <h3 id="1e65b91aa85b4652988df97bc8a7c152">根据用户的id获取班级信息</h3>
+                            <p>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=1e65b91aa85b4652988df97bc8a7c152"
+                                   class="label label-warning">在线测试</a>
+                                <a target="_blank"
+                                   href="https://apizza.net/pro/#/project/5b17a61856d50be3f7e0218d00029efc/browse?api=1e65b91aa85b4652988df97bc8a7c152"
+                                   class="label label-warning">在线浏览</a>
+                            </p>
+                            <p>请求方式：POST</p>
+                            <p>
+                                请求地址：http://{{host}}/class/getClassInfoByUser                            </p>
+
+                            
+                            
+
+                                                                <table class="table table-hover">
+                                            <colgroup>
+                                                <col class="col-xs-2">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-1">
+                                                <col class="col-xs-7">
+                                                <col class="col-xs-2">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><span class="label label-success">Body参数名</span></th>
+                                                <th>类型</th>
+                                                <th>必需</th>
+                                                <th>描述</th>
+                                                <th>示例 e.g.</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                    <td>userid</td>
+                                                    <td>string</td>
+                                                    <td>
+                                                        是
+                                                                                                                </td>
+                                                    <td>用户id</td>
+                                                    <td>15586219479869</td>
+                                                </tr>                                            </tbody>
+                                        </table>
+                            <p>详细说明：</p>
+                                <p>
+                                <div class="detail-info">
+                                    <div><p>根据用户id返回班级信息</p><p>201：无此学生</p></div>
+                                </div>
+                                </p>
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "获取成功",
+    "data": {
+        "id": "15611388183568",
+        "teacher": "15610996629011",
+        "type": "1",
+        "info": "软件工程2班",
+        "operator": "15610996629011",
+        "creattime": "2019-06-22T01:43:54.000 0000",
+        "updatetime": "2019-06-22T01:43:56.000 0000",
+        "remark": null
+    }
+}</code>
+                            </pre>
+                                </div>
+                            
+                        </div><div class="api-one">
                             <h3 id="a9d5250f66db45068ad7625a6122d22b">获取班级任务列表</h3>
                             <p>
                                 <a target="_blank"
@@ -2666,12 +2739,12 @@ pre code{
     "message": "查找成功",
     "data": [
         {
-            "id": "15611774166884",
-            "classid": "15611388183568",
-            "name": "班级任务1234",
-            "info": "完成软件工程实践",
+            "id": "15611774166884",//任务id
+            "classid": "15611388183568",//班级id
+            "name": "班级任务1234",//任务名字
+            "info": "完成软件工程实践",//任务信息
             "type": "0",
-            "endtime": "2019-06-14T16:00:00.000 0000",
+            "endtime": "2019-06-14T16:00:00.000 0000",//截至时间
             "operator": "15610996629011",
             "createtime": "2019-06-22T04:23:37.000 0000",
             "updatetime": "2019-06-22T04:23:37.000 0000",
@@ -2801,7 +2874,16 @@ pre code{
                                     <div><p>新增班级任务</p><p>与新增任务相似</p></div>
                                 </div>
                                 </p>
-                            
+                            <p>返回示例：</p>
+                                <div class="highlight">
+                            <pre>
+                                <code class="json hljs">{
+    "code": 200,
+    "message": "新增成功",
+    "data": "15611838124808"//任务id
+}</code>
+                            </pre>
+                                </div>
                             
                         </div><div class="api-one">
                             <h3 id="7620ecc930624c5dae7494be6300332f">删除班级内学生</h3>
@@ -2844,7 +2926,7 @@ pre code{
                                                     <td>
                                                         是
                                                                                                                 </td>
-                                                    <td></td>
+                                                    <td>学生的userid</td>
                                                     <td>15611049420021</td>
                                                 </tr>                                            </tbody>
                                         </table>
@@ -3005,15 +3087,15 @@ pre code{
                                             <td>
                                                 是
                                                                                                 </td>
-                                            <td></td>
-                                            <td>1</td>
+                                            <td>班级id</td>
+                                            <td>15611388183568</td>
                                         </tr><tr>
                                             <td>pageNumber</td>
                                             <td>string</td>
                                             <td>
                                                 是
                                                                                                 </td>
-                                            <td></td>
+                                            <td>页码</td>
                                             <td>0</td>
                                         </tr>                                    </tbody>
                                 </table>
@@ -3022,18 +3104,43 @@ pre code{
                             <p>详细说明：</p>
                                 <p>
                                 <div class="detail-info">
-                                    <div><p>功能：查找指定班级的所有成员</p><p>返回：list</p><p>状态码：</p><p>201：无此班级</p><p>200：班级成员查找成功</p></div>
+                                    <div><p>功能：查找指定班级的所有成员</p><p>返回：用户信息list，每一个都跟根据用户id返回用户信息的接口返回的数据一样</p><p>状态码：</p><p>201：无此班级</p><p>200：班级成员查找成功</p></div>
                                 </div>
                                 </p>
                             <p>返回示例：</p>
                                 <div class="highlight">
                             <pre>
                                 <code class="json hljs">{
-    "timestamp": "2019-06-21T18:12:57.210 0000",
-    "status": 404,
-    "error": "Not Found",
-    "message": "No message available",
-    "path": "/class/getStudentList"
+    "code": 200,
+    "message": "班级成员查找成功",
+    "data": [
+        {
+            "id": "15586219479869",//userid
+            "customid": "15586219479869",
+            "name": "测试成员1",
+            "sex": 1,//性别，0为女，1为男
+            "birth": "2019-05-22T16:00:00.000 0000",
+            "signature": "我是一个测试的沙狗",//个性签名
+            "city": "北京",//城市
+            "operator": "15586219479869",//记录操作者
+            "creattime": "2019-05-23T22:54:07.000 0000",
+            "updatetime": "2019-05-23T22:54:09.000 0000",
+            "remark": ""
+        },
+        {
+            "id": "15611126327289",
+            "customid": "15611126327289",
+            "name": "654",
+            "sex": 0,
+            "birth": "2019-06-21T10:23:53.000 0000",
+            "signature": "无",
+            "city": "未知",
+            "operator": "000000",
+            "creattime": "2019-06-21T10:23:53.000 0000",
+            "updatetime": "2019-06-21T10:23:53.000 0000",
+            "remark": ""
+        }
+    ]
 }</code>
                             </pre>
                                 </div>

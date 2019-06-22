@@ -86,10 +86,10 @@ function get_stu_list() {
 
 
 function add_stu() {
-    let classid="";
-    let user="";
-    let operator="";
-    let Remark="";
+    let classid=getSession("tmp_classid_2");
+    let user=getSession("tmp_user_2");
+    let operator=getSession("tmp_operator_2");
+    let Remark=getSession("tmp_operator_2");
     globalGet("/class/addStudent",{
         "classid":classid,
         "user":user,
@@ -122,6 +122,13 @@ $(document).ready(function () {
     }
     show_stu_list();
     show_class_info();
+
+    let isAdd=getSession("isAdd");
+    if (isAdd===undefined) isAdd=0;
+    if (isAdd===1) {
+        removeSession("isAdd");
+        add_stu();
+    }
 
 });
 
