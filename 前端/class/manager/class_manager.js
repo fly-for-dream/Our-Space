@@ -37,6 +37,7 @@ function get_stu_list() {
         "pageNumber":pageNumber2
     },function (d) {
         if (d["code"]===200) {
+            let e=d["data"];
 
         }
     });
@@ -61,9 +62,32 @@ function add_stu() {
 }
 
 
+function get_stu_item(e) {
+    return '<tr>\
+        <td>'+e["name"]+'</td>\
+        <td>'+e["sex"]+'</td>\
+        <td>'+e["place"]+'</td>\
+        <td>'+e["name"]+'</td>\
+        <td><button class="btn">删除学生</button></td>\
+    </tr>';
+
+}
+
+
+function show_stu_list() {
+    get_stu_list();
+}
+
+
 $(document).ready(function () {
 
-
+    let isLogin=getSession("isLogin");
+    if (isLogin===undefined) isLogin=0;
+    if (!isLogin) {
+        alert("请先登录!!!");
+        window.location.href="../../index/index.html";
+    }
+    show_stu_list();
 
 });
 
