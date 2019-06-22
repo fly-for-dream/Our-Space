@@ -23,7 +23,8 @@ function dele_stu() {
         alert("您不是老师，或者无此权限！！！");
         return;
     }
-    let id="";
+    let id=$(this).parent().parent().children("td").eq(0).text();
+    alert(id);
     globalPost("/class/deleteClassMember",{
         "id":id
     },function (d) {
