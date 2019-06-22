@@ -1,0 +1,279 @@
+
+body{
+}
+
+div{
+    border-radius: 5px;
+}
+
+form{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+a:active{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/****************************/
+/***********导航栏***********/
+/****************************/
+.navbar{
+    min-height: 50px;
+}
+
+.navbar-nav > li > a:hover{
+    background: #99CC99;
+}
+
+.bg-dark{
+    background-color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.u0{
+    border-width: 0;
+    left: 40px;
+    top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.u6{
+    border-width: 0;
+    left: 630px;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn{
+    background-color: lightgray;
+}
+
+.btn-success{
+    border-color: white;
+}
+
+.u10{
+    width: 100%;
+}
+
+.registernow{
+    background-color: #99CC99;
+}
+
+.registernow >a{
+    color: white!important;
+}
+
+/****************************/
+/***********分类*************/
+/****************************/
+.col-sm-2 > div{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    height: 32px;
+}
+
+.col-sm-2 > div > a{
+     color: #999999;
+ }
+
+.col-sm-2 > div > a > img{
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+.classity{
+    width:100%;
+    height: 36px!important;
+    background-color: #99CC99;
+}
+
+.classity > p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/****************************/
+/************中间************/
+/****************************/
+
+.img_inner{
+    width: 100%;
+    height: 350px;
+}
+
+.col-sm-8,.col-sm-2{
+    margin: 0;
+    padding: 0 5px;
+}
+
+.picture{
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    background-color: lightgray;
+}
+
+.picture >a{
+    color: white;
+    margin: auto;
+}
+
+.hotpost{
+    text-align: center;
+    margin-top: 10px;
+    width: 180px;
+    float: left;
+    height: 36px;
+    background-color: #99CC99;
+}
+
+.hotpost > a{
+    color: white;
+    font-size: 25px;
+}
+
+
+.post_width{
+    margin: 1px 0;
+    padding: 1px 0;
+    width: 100%;
+    height: 20px;
+}
+
+.post1,.post1_time{
+    width: 70%;
+    height: 20px;
+    float: left;
+    margin: 1px 0;
+    padding: 1px 0;
+}
+
+.post1_reply_num,.post1_browse_num{
+    width: 30%;
+    height: 20px;
+    float: right;
+    margin: 1px 0;
+    padding: 1px 0;
+}
+
+.post1>a> p>span{
+    text-align: left;
+    color: black;
+    margin: 1px 0;
+    padding: 1px 0;
+    font-size: 14px;
+    display: block;
+}
+
+.post1_reply_num> p>span{
+    text-align: right;
+    color: lightgray;
+    margin: 1px 0;
+    padding: 1px 0;
+    font-size: 14px;
+    display: block;
+}
+
+.post1_time> p>span{
+    text-align: left;
+    color: lightgray;
+    margin: 1px 0;
+    padding: 1px 0;
+    font-size: 14px;
+    display: block;
+}
+
+.post1_browse_num> p>span{
+    text-align: right;
+    color: lightgray;
+    margin: 1px 0;
+    padding: 1px 0;
+    font-size: 14px;
+    display: block;
+}
+
+.u75{
+    width: 100%;
+    height: 2px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.card-header{
+    background-color: #dff0d8;
+}
+
+/****************************/
+/***********每日学习榜*******/
+/****************************/
+.everyday > div{
+    margin: 10px auto;
+    text-align: center;
+    width:100%;
+    height: 32px;
+}
+
+.rank_num{
+    margin-left: 36px;
+    background-color: #99CC99;
+    height: 32px;
+}
+
+.rank_num > a{
+    color: white;
+}
+
+.rankings{
+    float: left;
+    color: white;
+    background-color: white!important;
+}
+
+.rankings > img{
+    width: 32px;
+    height: 32px;
+}
+
+.everyday > div > a{
+    color: #999999;
+}
+
+.study{
+    height: 36px!important;
+    background-color: #99CC99;
+}
+
+.study > p{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+

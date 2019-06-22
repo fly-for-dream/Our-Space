@@ -20,18 +20,6 @@ function showHotElement(){
 		t.eq(i).delay(i*300).fadeIn(1500);
 }
 
-function searh() {
-	// search_word=$("#_search_word").val();
-	let s=$("#_search_word").val();
-	if (s==="") {
-		alert("请输入搜索内容!!!");
-		return;
-	}
-	setSession("search_word",s);
-	// document.writeln(search_word);
-	// console.log(search_word);
-	window.location.href = "../search/search.html?page=1";
-}
 
 
 
@@ -81,20 +69,6 @@ $(document).ready(function () {
 
 });
 
-function exitLogin() {
-	alert("已退出！！");
-	// removeSession("isLogin");
-	// removeSession("user_name_login");
-	// removeSession("user_id_login");
-	clearSession();
-	$("#islogin1").attr("hidden","hidden");
-	$("#islogin2").attr("hidden","hidden");
-	$("#notlogin1").removeAttr("hidden");
-	$("#notlogin2").removeAttr("hidden");
-	window.location.href="index.html";
-	// alert("tuichu");
-	// window.location.reload();
-}
 
 
 

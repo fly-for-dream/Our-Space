@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="shortcut icon" href="../index/images_index/LOGO.jpg" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../cssjs/jquery.min_2.1.1.js"></script>
+    <script src="../cssjs/bootstrap.min_3.3.7.js"></script>
+    <link rel="stylesheet" href="../cssjs/bootstrap.min_3.3.7.css">
+
+    <link rel="stylesheet" href="../cssjs/bootstrap.min.css">
+    <script src="../cssjs/jquery.min.js"></script>
+    <script src="../cssjs/popper.min.js"></script>
+    <script src="../cssjs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../constAPI.js"></script>
+    <script type="text/javascript" src="../usefulFUnction.js"></script>
+    <script type="text/javascript" src="head.js"></script>
+    <link rel="stylesheet" type="text/css" href="head.css">
+</head>
+<body >
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+    <div class="container">
+        <a class="navbar-brand" href="../index/index.html"><img class= "u0" src="../index/images_index/u0.jpg" alt="图标"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" onclick='top.location.href="../index/index.html"'>首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick='top.location.href="../任务/task.html"'>任务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick='top.location.href="../class/student/class_student.html"'>班级</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick='top.location.href="../download/download.html"'>下载</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <label><input class="form-control" type="text" id="_search_word"></label>
+                <button class="btn btn-success" type="button"><img class= "u6" src="../index/images_index/u6.png" alt="图标" onclick="searh()"></button>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-item" id="notlogin1">
+                    <a class="nav-link" onclick='top.location.href="../index/login_register/login.html"'>登录</a>
+                </li>
+                <li class="registernow nav-item" id="notlogin2">
+                    <a class="nav-link" onclick='top.location.href="../index/login_register/register.html"'>注册</a>
+                </li>
+                <li class="nav-item" id="islogin1" hidden="hidden">
+                    <a class="nav-link" onclick="gotoPer()">头像</a>
+                </li>
+                <li class="registernow nav-item" id="islogin2" hidden="hidden">
+                    <a class="nav-link" onclick="exitLogin()">退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
