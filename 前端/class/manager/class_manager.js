@@ -46,7 +46,7 @@ function show_class_info_content(u) {
 
 function get_class_info() {
     let id=getSession("user_id_login");
-
+    alert(id);
     globalGet("/class/getClassInfo",{
         "id":id
     },function (d) {
@@ -68,6 +68,7 @@ function get_class_info() {
 
 function get_stu_list() {
     let id2=getSession("class_id");
+    alert(id2);
     let pageNumber2=0;
     globalGet("/class/getStudentList",{
         "id":id2,
